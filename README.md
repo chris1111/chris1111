@@ -2,6 +2,13 @@
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&hide=php,css&layout=compact)
 
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=chris111&repo=github-readme-stats" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=chris1111&repo=convoychat" />
+</a>
+
 
 
 
