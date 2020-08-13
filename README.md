@@ -6,7 +6,7 @@
 
 
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=chris1111&repo=github-readme-stats)](https://github.com/chris1111/github-readme-stats)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=chris1111&repo=github-readme-stats)](https://github.com/chris1111/github-readme)
 
 
 
