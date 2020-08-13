@@ -2,7 +2,7 @@
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&hide=php,css&layout=compact)
 
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/chris1111/chris1111)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=chris1111&repo=github-readme-stats)](https://github.com/chris1111/chris1111)
 
 
 
