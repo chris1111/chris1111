@@ -2,7 +2,8 @@
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true)- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true)
 
 <div align="center">
-[![Modular Image Creation](https://user-images.githubusercontent.com/6248794/90335166-d33d6900-dfa0-11ea-90e8-e3712f3fd495.png)](https://github.com/chris1111?tab=repositories)
+[![Modular Image Creation](https://user-images.githubusercontent.com/6248794/90335194-10096000-dfa1-11ea-97c8-9e629a9909ee.gif)](https://github.com/chris1111?tab=repositories)
+    
 </a>
     </div>
     </div>
