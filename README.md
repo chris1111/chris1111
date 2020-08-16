@@ -3,7 +3,7 @@
 
 
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/90334647-2a413f00-df9d-11ea-9a8b-577ad4b0c329.png)
-)](https://github.com/chris1111?tab=repositories)
+](https://github.com/chris1111?tab=repositories)
 
 
 
