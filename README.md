@@ -4,7 +4,6 @@
 <!--END_SECTION:waka-->
 
 
-<hr>
 
 <div align="center">
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/89213455-1c4df000-d593-11ea-8b84-10fce748775d.png)](https://youtu.be/H2REABuq6rI)
