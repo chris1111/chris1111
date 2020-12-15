@@ -12,7 +12,7 @@
     
 <div align="center">
 
-[![Modular Image Creation](https://user-images.githubusercontent.com/6248794/102248759-8d050180-3ecf-11eb-83c3-4d7fc6b8f44a.png)](https://github.com/chris1111?tab=repositories)
+[![Modular Image Creation](https://user-images.githubusercontent.com/6248794/102249709-a5295080-3ed0-11eb-9a3f-7e412aafe6f3.png)](https://github.com/chris1111?tab=repositories)
 
 
 
