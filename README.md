@@ -12,6 +12,7 @@
     
 <div align="center">
  
+ 
 [Wireless-USB-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)
 
 [Wireless-USB-OC-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter)
@@ -31,6 +32,20 @@
 [Wireless-Adapter-Clover-BigSur](https://github.com/chris1111/WirelessAdapterCloverBigSur)
 
 [VoodooHDA-OC](https://github.com/chris1111/VoodooHDA-OC)
+
+[Fix-PackageMaker-APFS](https://github.com/chris1111/Fix-PackageMaker-APFS)
+
+[Icnspack-Builder](https://github.com/chris1111/Icnspack-Builder)
+
+[OpenCore-Package](https://github.com/chris1111/OpenCore-Package)
+
+[Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
+
+[Wireless-USB-Adapter](https://github.com/chris1111/Wireless-USB-Adapter)
+
+[Kext-Droplet](https://github.com/chris1111/Kext-Droplet)
+
+
 
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/102250273-5c25cc00-3ed1-11eb-9bdf-1c1b27d04dd2.png)]()
 
