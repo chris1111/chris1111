@@ -16,53 +16,53 @@
 
 - [Wireless-USB-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)
 
-[Wireless-USB-OC-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter)
+- [Wireless-USB-OC-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter)
 
-[Catalina Recovery HD Partition](https://github.com/chris1111/Catalina-Recovery-HD-Partition)
+- [Catalina Recovery HD Partition](https://github.com/chris1111/Catalina-Recovery-HD-Partition)
 
-[Download-BigSur](https://github.com/chris1111/Download-BigSur)
+- [Download-BigSur](https://github.com/chris1111/Download-BigSur)
 
-[Kext-Droplet-Big-Sur](https://github.com/chris1111/Kext-Droplet-Big-Sur)
+- [Kext-Droplet-Big-Sur](https://github.com/chris1111/Kext-Droplet-Big-Sur)
 
-[Beta-Access-Software-Utility](https://github.com/chris1111/Beta-Access-Software-Utility)
+- [Beta-Access-Software-Utility](https://github.com/chris1111/Beta-Access-Software-Utility)
 
-[OpenCore-Creator](https://github.com/chris1111/OpenCore-Creator)
+- [OpenCore-Creator](https://github.com/chris1111/OpenCore-Creator)
 
-[Drop-EFI-Big-Sur](https://github.com/chris1111/Drop-EFI-Big-Sur)
+- [Drop-EFI-Big-Sur](https://github.com/chris1111/Drop-EFI-Big-Sur)
 
-[Wireless-Adapter-Clover-BigSur](https://github.com/chris1111/WirelessAdapterCloverBigSur)
+- [Wireless-Adapter-Clover-BigSur](https://github.com/chris1111/WirelessAdapterCloverBigSur)
 
-[VoodooHDA-OC](https://github.com/chris1111/VoodooHDA-OC)
+- [VoodooHDA-OC](https://github.com/chris1111/VoodooHDA-OC)
 
-[Fix-PackageMaker-APFS](https://github.com/chris1111/Fix-PackageMaker-APFS)
+- [Fix-PackageMaker-APFS](https://github.com/chris1111/Fix-PackageMaker-APFS)
 
-[Icnspack-Builder](https://github.com/chris1111/Icnspack-Builder)
+- [Icnspack-Builder](https://github.com/chris1111/Icnspack-Builder)
 
-[OpenCore-Package](https://github.com/chris1111/OpenCore-Package)
+- [OpenCore-Package](https://github.com/chris1111/OpenCore-Package)
 
-[Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
+- [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
-[Wireless-USB-Adapter](https://github.com/chris1111/Wireless-USB-Adapter)
+- [Wireless-USB-Adapter](https://github.com/chris1111/Wireless-USB-Adapter)
 
-[Kext-Droplet](https://github.com/chris1111/Kext-Droplet)
+- [Kext-Droplet](https://github.com/chris1111/Kext-Droplet)
 
-[Install-Media-BS-OC](https://github.com/chris1111/Install-Media-BS-OC)
+- [Install-Media-BS-OC](https://github.com/chris1111/Install-Media-BS-OC)
 
-[macOS-High-Sierra-HD](https://github.com/chris1111/macOS-High-Sierra-HD)
+- [macOS-High-Sierra-HD](https://github.com/chris1111/macOS-High-Sierra-HD)
 
-[Fix-Old-NVIDIA-macOS-Mojave](https://github.com/chris1111/Fix-Old-NVIDIA-macOS-Mojave)
+- [Fix-Old-NVIDIA-macOS-Mojave](https://github.com/chris1111/Fix-Old-NVIDIA-macOS-Mojave)
 
-[Fix-Graphics-HD-3000-Mojave-10.14](https://github.com/chris1111/Fix-Graphics-HD-3000-Mojave-10.14)
+- [Fix-Graphics-HD-3000-Mojave-10.14](https://github.com/chris1111/Fix-Graphics-HD-3000-Mojave-10.14)
 
-[Show Hide Big Sur](https://github.com/chris1111/Show-Hide-BS)
+- [Show Hide Big Sur](https://github.com/chris1111/Show-Hide-BS)
 
-[USB-Wireless-Utility](https://github.com/chris1111/USB-Wireless-Utility)
+- [USB-Wireless-Utility](https://github.com/chris1111/USB-Wireless-Utility)
 
-[Disk-Speed-Test](https://github.com/chris1111/Disk-Speed-Test)
+- [Disk-Speed-Test](https://github.com/chris1111/Disk-Speed-Test)
 
-[VoodooHDA-2.9.2-Clover](https://github.com/chris1111/VoodooHDA-2.9.2-Clover-V15)
+- [VoodooHDA-2.9.2-Clover](https://github.com/chris1111/VoodooHDA-2.9.2-Clover-V15)
 
-[Command-Line-EFI-Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
+- [Command-Line-EFI-Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
 
 </a>
     </div>
