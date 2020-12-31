@@ -10,7 +10,7 @@
     </div>
     </div>
     
-<div align="center">
+<div align="left">
  
 ![git](https://user-images.githubusercontent.com/6248794/103409556-67b1fd80-4b35-11eb-83b6-abede17a0260.png)
 
