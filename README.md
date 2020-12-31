@@ -46,6 +46,16 @@
 
 [Kext-Droplet](https://github.com/chris1111/Kext-Droplet)
 
+[Install-Media-BS-OC](https://github.com/chris1111/Install-Media-BS-OC)
+
+[macOS-High-Sierra-HD](https://github.com/chris1111/macOS-High-Sierra-HD)
+
+[Fix-Old-NVIDIA-macOS-Mojave](https://github.com/chris1111/Fix-Old-NVIDIA-macOS-Mojave)
+
+[Fix-Graphics-HD-3000-Mojave-10.14](https://github.com/chris1111/Fix-Graphics-HD-3000-Mojave-10.14)
+
+[USB-Wireless-Utility](https://github.com/chris1111/USB-Wireless-Utility)
+
 
 </a>
     </div>
