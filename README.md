@@ -54,8 +54,15 @@
 
 [Fix-Graphics-HD-3000-Mojave-10.14](https://github.com/chris1111/Fix-Graphics-HD-3000-Mojave-10.14)
 
+[Show Hide Big Sur](https://github.com/chris1111/Show-Hide-BS)
+
 [USB-Wireless-Utility](https://github.com/chris1111/USB-Wireless-Utility)
 
+[Disk-Speed-Test](https://github.com/chris1111/Disk-Speed-Test)
+
+[VoodooHDA-2.9.2-Clover](https://github.com/chris1111/VoodooHDA-2.9.2-Clover-V15)
+
+[Command-Line-EFI-Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
 
 </a>
     </div>
