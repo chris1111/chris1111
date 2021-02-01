@@ -14,6 +14,8 @@
  
 ![git](https://user-images.githubusercontent.com/6248794/103409556-67b1fd80-4b35-11eb-83b6-abede17a0260.png)
 
+- [Config Validator](https://github.com/chris1111/Config-Validator)
+
 - [Create-Install-Media-V2](https://github.com/chris1111/Create-Install-Media-V2)
 
 - [Wireless-USB-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)
