@@ -14,6 +14,8 @@
  
 ![git](https://user-images.githubusercontent.com/6248794/103409556-67b1fd80-4b35-11eb-83b6-abede17a0260.png)
 
+- [OpenCanopy-Generator](https://github.com/chris1111/OpenCanopy-Generator)
+
 - [Config Validator](https://github.com/chris1111/Config-Validator)
 
 - [Create-Install-Media-V2](https://github.com/chris1111/Create-Install-Media-V2)
@@ -39,8 +41,6 @@
 - [VoodooHDA-OC](https://github.com/chris1111/VoodooHDA-OC)
 
 - [Fix-PackageMaker-APFS](https://github.com/chris1111/Fix-PackageMaker-APFS)
-
-- [Icnspack-Builder](https://github.com/chris1111/Icnspack-Builder)
 
 - [OpenCore-Package](https://github.com/chris1111/OpenCore-Package)
 
