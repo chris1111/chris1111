@@ -14,6 +14,10 @@
  
 ![git](https://user-images.githubusercontent.com/6248794/103409556-67b1fd80-4b35-11eb-83b6-abede17a0260.png)
 
+- [Simple Themes OpenCore](https://github.com/chris1111/My-Simple-OC-Themes)
+ 
+- [HP-Probook-EliteBook-Package-Creator-OC](https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC)
+ 
 - [OpenCanopy-Generator](https://github.com/chris1111/OpenCanopy-Generator)
 
 - [Config Validator](https://github.com/chris1111/Config-Validator)
