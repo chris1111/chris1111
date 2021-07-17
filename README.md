@@ -18,6 +18,8 @@
  
 - [RAR-Archiver](https://github.com/chris1111/RAR-Archiver)
  
+- [KextLoadMenu](https://github.com/chris1111/KextLoadMenu)
+ 
 - [DELL-Optiplex-790-Monterey](https://github.com/chris1111/DELL-Optiplex-790-Monterey)
  
 - [D-LinkUtility-Package](https://github.com/chris1111/D-LinkUtility-Package)
