@@ -18,7 +18,6 @@
     </div>
     </div>
     
-     <div align="center">
  </a>
     </div>
     </div>    
