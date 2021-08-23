@@ -14,13 +14,7 @@
  
 ![git](https://user-images.githubusercontent.com/6248794/103409556-67b1fd80-4b35-11eb-83b6-abede17a0260.png)
  
-- [Background-Resizer](https://github.com/chris1111/Background-Resizer)
- 
-- [RAR-Archiver](https://github.com/chris1111/RAR-Archiver)
- 
-- [Network-Speed-Test](https://github.com/chris1111/Network-Speed-Test)
- 
-- [DELL-Optiplex-790-Monterey](https://github.com/chris1111/DELL-Optiplex-790-Monterey)
+- [Background-Resizer](https://github.com/chris1111/Background-Resizer) - [RAR-Archiver](https://github.com/chris1111/RAR-Archiver) - [Network-Speed-Test](https://github.com/chris1111/Network-Speed-Test) - [DELL-Optiplex-790-Monterey](https://github.com/chris1111/DELL-Optiplex-790-Monterey)
  
 - [D-LinkUtility-Package](https://github.com/chris1111/D-LinkUtility-Package)
  
