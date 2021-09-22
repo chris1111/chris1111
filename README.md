@@ -2,7 +2,7 @@
 
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&theme=tokyonight)- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&theme=tokyonight)
 
-[My Github Project](https://github.com/chris1111?tab=repositories)
+[My Github Project](https://github.com/chris1111?tab=repositories)|
 -|-|-|-
 <a href="https://github.com/chris1111?tab=repositories"><img src="https://user-images.githubusercontent.com/6248794/134265145-48b081e9-63aa-4def-acd9-a347c5f55f13.png" width="300px"></a>
 
@@ -22,9 +22,3 @@ macOS Utilities.
 <a href="https://github.com/chris1111/D-LinkUtility-Package"><img src="https://user-images.githubusercontent.com/6248794/134263644-2f5dfabc-70b6-465d-945a-714bc864a78a.png" width="300px"></a>|<a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC"><img src="https://user-images.githubusercontent.com/6248794/134263740-5d36e8f1-1b8d-4c5c-97a7-b4dd65bcdedd.png" width="300px"></a>|<a href="https://github.com/chris1111/Apple-Create-Install-Media"><img src="https://user-images.githubusercontent.com/6248794/134263936-7eefccf3-899e-4247-8c11-de54147b66ad.png" width="300px"></a>|<a href="https://github.com/chris1111/OpenCore-Package"><img src="https://user-images.githubusercontent.com/6248794/134264303-1e22c15e-16f5-42d2-91eb-a29db33b2155.png" width="300px"></a>
 
 
-  ![git](https://user-images.githubusercontent.com/6248794/103409556-67b1fd80-4b35-11eb-83b6-abede17a0260.png)
-
- 
-    
-## ➡️ - [My Project](https://github.com/chris1111?tab=repositories) -
-    
