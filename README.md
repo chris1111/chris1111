@@ -2,17 +2,16 @@
 
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&theme=tokyonight)- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&theme=tokyonight)
 
-#### [My Github Project](https://github.com/chris1111?tab=repositories)
+[My Github Project](https://github.com/chris1111?tab=repositories)
 -
 
 <a href="https://github.com/chris1111?tab=repositories"><img src="https://user-images.githubusercontent.com/6248794/134265145-48b081e9-63aa-4def-acd9-a347c5f55f13.png" width="300px"></a>
-
 -
 
 
 
 
-### macOS Utilities
+macOS Utilities
 
 [Wireless-USB-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)|[OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator)|[Themes OpenCore](https://github.com/chris1111/My-Simple-OC-Themes)|[Patch HD 4000 Monterey](https://github.com/chris1111/Patch-HD4000-Monterey)
 -|-|-|-
