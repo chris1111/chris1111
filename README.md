@@ -1,6 +1,6 @@
 ### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 Hope to meet you 🤝 on one of my project.
 
-### ⚙️ &nbsp;GitHub Analytics
+#### ⚙️ &nbsp;GitHub Analytics
 <p align="left"><b>Visitor's Count</b></p>
 <p align="left"><img src="https://profile-counter.glitch.me/chris1111/count.svg" alt="visitor badge"/></p>
 
