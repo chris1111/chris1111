@@ -1,5 +1,9 @@
 ### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 Hope to meet you 🤝 on one of my project.
 
+### ⚙️ &nbsp;GitHub Analytics
+<p align="center"><b>Visitor's Count</b></p>
+<p align="center"><img src="https://profile-counter.glitch.me/valnoxy/count.svg" alt="visitor badge"/></p>
+
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&theme=tokyonight)- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&theme=tokyonight)
 
 [My ➤ Page](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/My%20Github%20Page.html) 
