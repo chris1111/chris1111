@@ -1,5 +1,4 @@
-### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 
-### Hope to meet you 🤝 on one of my project.
+### chris1111 Github Page
 
 
 
@@ -25,7 +24,7 @@ macOS Utilities
 ----------------------------------------------------------------------
 
 
-[My ➤ Page](https://com-chris1111.github.io/) 
+[My ➤ Site](https://com-chris1111.github.io/) 
 -
 
 <a href="https://github.com/chris1111?tab=repositories"><img src="https://user-images.githubusercontent.com/6248794/134265145-48b081e9-63aa-4def-acd9-a347c5f55f13.png" width="200px"></a>
