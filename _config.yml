@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+title: chris1111 Github Pages
+github:
+  repository_url: https://chris1111.github.io/chris1111/
+remote_theme: lewismiddleton/cayman-dark
