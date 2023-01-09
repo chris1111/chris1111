@@ -34,6 +34,3 @@ macOS Utilities
 
 [My ➤ Github Project](https://github.com/chris1111?tab=repositories)
 -
-
-<img width="150" alt="wimlib" src="https://user-images.githubusercontent.com/6248794/211205211-bfc3ea45-569d-46bc-b281-e2bf0dc0a333.png">
-
