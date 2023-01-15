@@ -7,7 +7,6 @@
 
 [![chris1111's GitHub stats](https://github-readme-stats-chris1112.vercel.app/api?username=chris1111&theme=white&hide_border=false)](https://github.com/chris1111/chris1111)
 
-
 ----------------------------------------------------------------------
 ### 📌  Make a donation and support the projects ➤ [Support chris1111 Github Project](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html) 
 ----------------------------------------------------------------------
