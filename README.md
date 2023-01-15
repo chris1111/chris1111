@@ -5,7 +5,9 @@
 <p align="left"><b>Visitor's Count</b></p>
 <p align="left"><img src="https://profile-counter.glitch.me/chris1111/count.svg" alt="visitor badge"/></p>
 
-[![chris1111's GitHub stats](https://github-readme-stats-chris1112.vercel.app/api?username=chris1111&theme=white&hide_border=false)](https://github.com/chris1111/chris1111)
+![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&theme=tokyonight)
 
 ----------------------------------------------------------------------
 ### 📌  Make a donation and support the projects ➤ [Support chris1111 Github Project](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html) 
