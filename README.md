@@ -11,7 +11,7 @@
 ----------------------------------------------------------------------
 ### 📌  Make a donation and support the projects ➤ [Support chris1111 Github Project](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html) 
 ----------------------------------------------------------------------
-chris1111-Github-IO ➤ [My Pages](https://com-chris1111.github.io/) 
+chris1111-Github-IO ➤ [My Pages](https://chris1111.github.io/My-Github-Pages/) 
 
 
 macOS Utilities
