@@ -12,7 +12,8 @@
 
 
 ----------------------------------------------------------------------
-### 📌  Make a donation and support the projects ➤ [Support chris1111 Github Project](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html) 
+### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PayPal-Donate-Button.svg)](https://www.paypal.com/donate?token=Vu6h29VG0NjbODaM8kiF6jMBtF1jwj8LZ8nKg-y6iK24_EJEspax9xOfBMjNYFTvpo46vFs6Lvos_RqP&locale.x=EN)
+
 ----------------------------------------------------------------------
 
 
