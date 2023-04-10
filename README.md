@@ -1,6 +1,8 @@
 ### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 
 ### Hope to meet you 🤝 on one of my project.
 
+![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=00000000)]![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=00000000)
+
 <img width="1920" alt="DEMO" src="https://user-images.githubusercontent.com/6248794/230898292-873f6180-595e-4b08-b416-38a728df642c.png">
 
 ## chris1111-Github-IO ➡︎ [My Pages](https://chris1111.github.io/My-Github-Pages/) 
@@ -9,10 +11,6 @@
 #### ⚙️ &nbsp;GitHub Analytics
 <p align="left"><b>Visitor's Count</b></p>
 <p align="left"><img src="https://profile-counter.glitch.me/chris1111/count.svg" alt="visitor badge"/></p>
-
-
-![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=00000000)]![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=00000000)
-
 
 ----------------------------------------------------------------------
 ### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PayPal-Donate-Button.svg)](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html)
