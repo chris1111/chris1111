@@ -3,7 +3,8 @@
 
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=00000000)]![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=00000000)
 
-<a href="https://chris1111.github.io/My-Github-Pages/"><img src="https://user-images.githubusercontent.com/6248794/230898292-873f6180-595e-4b08-b416-38a728df642c.png" width="1920px">
+<a href="https://chris1111.github.io/My-Github-Pages/"><img src="https://user-images.githubusercontent.com/6248794/230942263-ad65df04-4217-4b8f-bedd-db0ac325f7ca.png" width="1920px">
+
 
 ## chris1111-Github-IO ➡︎ [My Pages](https://chris1111.github.io/My-Github-Pages/) 
 
