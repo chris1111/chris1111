@@ -1,7 +1,7 @@
 ### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 
 ### Hope to meet you 🤝 on one of my project.
 
-![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=00000000)]![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=00000000)
+![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=181818)]![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)
 
 <a href="https://chris1111.github.io/My-Github-Pages/"><img src="https://user-images.githubusercontent.com/6248794/230942263-ad65df04-4217-4b8f-bedd-db0ac325f7ca.png" width="1920px">
 
