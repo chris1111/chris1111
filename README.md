@@ -3,7 +3,7 @@
 
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=181818)]![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)
 
-<a href="https://chris1111.github.io/My-Github-Pages/"><img src="https://github.com/chris1111/chris1111/blob/master/Banner.png" width="1920px">
+<a href="https://chris1111.github.io/My-Github-Pages/"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Banner.png" width="1920px">
 
 
 ## chris1111-Github-IO ➡︎ [My Pages](https://chris1111.github.io/My-Github-Pages/)
@@ -24,7 +24,7 @@ macOS Utilities
 
 [Wireless-USB-Big-Sur-Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)|[OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator)|[Themes OpenCore](https://github.com/chris1111/My-Simple-OC-Themes)|[Create-Windows-USB](https://github.com/chris1111/Create-Windows-USB)
 -|-|-|-
-<a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter"><img src="https://user-images.githubusercontent.com/6248794/140664934-ccf2af36-9070-4cf0-9386-f47d6589e992.png" width="300px"></a>|<a href="https://github.com/chris1111/OpenCanopy-Generator"><img src="https://user-images.githubusercontent.com/6248794/134259571-1106d642-2186-43ac-8ddd-f7e55f202dc2.png" width="300px"></a>|<a href="https://github.com/chris1111/My-Simple-OC-Themes"><img src="https://user-images.githubusercontent.com/6248794/134266464-e41a5347-cae6-46ed-b345-1170f4d82ecb.png" width="300px"></a>|<a href="https://github.com/chris1111/Create-Windows-USB"><img src="https://github.com/chris1111/chris1111/blob/master/Create-Windows-USB.png" width="300px"></a>
+<a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter"><img src="https://user-images.githubusercontent.com/6248794/140664934-ccf2af36-9070-4cf0-9386-f47d6589e992.png" width="300px"></a>|<a href="https://github.com/chris1111/OpenCanopy-Generator"><img src="https://user-images.githubusercontent.com/6248794/134259571-1106d642-2186-43ac-8ddd-f7e55f202dc2.png" width="300px"></a>|<a href="https://github.com/chris1111/My-Simple-OC-Themes"><img src="https://user-images.githubusercontent.com/6248794/134266464-e41a5347-cae6-46ed-b345-1170f4d82ecb.png" width="300px"></a>|<a href="https://github.com/chris1111/Create-Windows-USB"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Create-Windows-USB.png" width="300px"></a>
   
 
 
