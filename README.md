@@ -1,11 +1,12 @@
 ### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 
 ### Hope to meet you 🤝 on one of my project.
 
-![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=181818)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)
-<p align="center">
-    
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=chris1111&theme=tokyonight-duo)](https://git.io/streak-stats)
+![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=181818)[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=chris1111&theme=tokyonight-duo)](https://git.io/streak-stats)
 
+<p align="center">  
+    
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)
+    
 </p>
 
   
