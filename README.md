@@ -6,12 +6,10 @@
     
 ![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&show_icons=true&bg_color=181818)[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=chris1111&theme=tokyonight-duo)](https://git.io/streak-stats)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)
-    
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)<a href="https://chris1111.github.io/My-Github-Pages/"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Banner.png" width="600px">
+
 </p>
 
-  
-<a href="https://chris1111.github.io/My-Github-Pages/"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Banner.png" width="1920px">
 
 
 ## chris1111-Github-IO ➡︎ [My Pages](https://chris1111.github.io/My-Github-Pages/)
