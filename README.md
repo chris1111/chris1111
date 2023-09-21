@@ -16,7 +16,7 @@
 
 
 #### ⚙️ &nbsp;GitHub Analytics
-<p align="left"><b>Profile Views</b></p>
+<p align="left"><b>Profile Views 🔎 </b></p>
 <p align="left"><img src="https://profile-counter.glitch.me/chris1111/count.svg" alt="visitor badge"/></p>
 
 ----------------------------------------------------------------------
