@@ -3,11 +3,15 @@
 
 
 <p align="center">
-    
-![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&icons=true&bg_color=181818)[![](https://streak-stats.demolab.com?user=chris1111&theme=tokyonight)](https://git.io/streak-stats)
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=chris1111&theme=git-dark)](https://git.io/streak-stats)
+
+![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&icons=true&bg_color=181818)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)
+
 <a href="https://chris1111.github.io/My-Github-Pages/">
+    
 <img src="https://github.com/chris1111/chris1111/blob/master/PICS/chris1111-Git.png" width="1000px">
 </p>
 
