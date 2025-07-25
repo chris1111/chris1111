@@ -16,20 +16,13 @@
 </p>
 
 
-
 ## My ➡︎ [Github Pages](https://chris1111.github.io/My-Github-Pages/)
 - [All ➤ Github Project](https://github.com/chris1111?tab=repositories)
-
-
-#### ⚙️ &nbsp;GitHub Analytics
-<p align="left"><b>Profile Views 🔎 </b></p>
-<p align="left"><img src="https://profile-counter.glitch.me/chris1111/count.svg" alt="visitor badge"/></p>
 
 ----------------------------------------------------------------------
 ### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PICS/PayPal-Donate-Button.svg)](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html)
 
 ----------------------------------------------------------------------
-
 
 macOS Utilities
 
