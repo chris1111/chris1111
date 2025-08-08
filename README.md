@@ -4,7 +4,7 @@
 
 <p align="center">
 
-![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&icons=true&bg_color=181818)[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=chris1111&theme=tokyonight-duo)](https://git.io/streak-stats)
+![chris1111's github stats](https://github-readme-stats.vercel.app/api?username=chris1111&icons=true&bg_color=181818)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)<a href="https://chris1111.github.io/My-Github-Pages/">
 
