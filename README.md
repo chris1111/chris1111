@@ -44,4 +44,4 @@ macOS Utilities
 
 [Download Install macOS](https://github.com/chris1111/Download_Install_macOS)
 -|
-<a href="https://github.com/chris1111/Download_Install_macOS"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Download.png" width="250px"></a>
+<a href="https://github.com/chris1111/Download_Install_macOS"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Download.png" width="220px"></a>
