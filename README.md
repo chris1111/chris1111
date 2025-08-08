@@ -26,9 +26,9 @@
 
 macOS Utilities
 
-[HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4)|[Drop-EFI](https://github.com/chris1111/Drop-EFI)|[Dell-Optiplex-790](https://github.com/chris1111/Dell-Optiplex-790)|[Download Install macOS](https://github.com/chris1111/Download_Install_macOS)
+[HP EliteBook 840 G4](https://github.com/chris1111/HP-EliteBook-840-G4)|[Drop-EFI](https://github.com/chris1111/Drop-EFI)|[Dell-Optiplex-790](https://github.com/chris1111/Dell-Optiplex-790)|[Kext-Drop](https://github.com/chris1111/Kext-Drop)
 -|-|-|-
-<a href="https://github.com/chris1111/HP-EliteBook-840-G4"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/HP EliteBook 840 G4.png" width="250px"></a>|<a href="https://github.com/chris1111/Drop-EFI"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/DropEFI.png" width="250px"></a>|<a href="https://github.com/chris1111/Dell-Optiplex-790"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Optiplex 790.png" width="250px"></a>|<a href="https://github.com/chris1111/Download_Install_macOS"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Download.png" width="250px"></a>
+<a href="https://github.com/chris1111/HP-EliteBook-840-G4"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/HP EliteBook 840 G4.png" width="250px"></a>|<a href="https://github.com/chris1111/Drop-EFI"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/DropEFI.png" width="250px"></a>|<a href="https://github.com/chris1111/Dell-Optiplex-790"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Optiplex 790.png" width="250px"></a>|<a href="https://github.com/chris1111/Kext-Drop"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Kext-Drop.png" width="250px"></a>
 
 [Wireless USB BigSur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)|[OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator)|[Themes OpenCore](https://github.com/chris1111/My-Simple-OC-Themes)|[GateKeeper-Tools](https://github.com/chris1111/GateKeeper-Tools)
 -|-|-|-
@@ -41,3 +41,7 @@ macOS Utilities
 [Linux Square Grey](https://github.com/chris1111/Linux_Square_Grey)|[Wimlib Imagex Package](https://github.com/chris1111/Wimlib-Imagex-Package)|[OpenCore Config Validator](https://github.com/chris1111/Config-Validator)|[Softwareupdate full installer](https://github.com/chris1111/Softwareupdate-full-installer)
 -|-|-|-
 <a href="https://github.com/chris1111/Linux_Square_Grey"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Garuda.png" width="250px"></a>|<a href="https://github.com/chris1111/Wimlib-Imagex-Package"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Wimlib imagex Packager.png" width="250px"></a>|<a href="https://github.com/chris1111/Config-Validator"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Config Validator.png" width="250px"></a>|<a href="https://github.com/chris1111/Softwareupdate-full-installer"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/SoftwareUpdate.png" width="250px"></a>
+
+[Download Install macOS](https://github.com/chris1111/Download_Install_macOS)
+-|
+<a href="https://github.com/chris1111/Download_Install_macOS"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Download.png" width="250px"></a>
