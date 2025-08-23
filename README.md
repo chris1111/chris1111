@@ -12,7 +12,7 @@
 
 <a href="https://chris1111.github.io/My-Github-Pages/">
     
-<img src="https://github.com/chris1111/chris1111/blob/master/PICS/chris1111-Git.png" width="1000px">
+<img src="https://github.com/chris1111/chris1111/blob/master/PICS/chris1111-Git-2.png" width="1000px">
 </p>
 
 
