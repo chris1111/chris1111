@@ -4,6 +4,7 @@
 
 <p align="center">
 
+[![GitHub Streak](https://streak-stats.demolab.com?user=chris1111)](https://git.io/streak-stats)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)<a href="https://chris1111.github.io/My-Github-Pages/">
 
