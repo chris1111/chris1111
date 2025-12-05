@@ -4,7 +4,11 @@
 
 <p align="center">
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chris1111&show_icons=true&bg_color=181818)<a href="https://chris1111.github.io/My-Github-Pages/">![Pranesh's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=chris1111&show_icons=true&theme=radical)
+
+<a href="https://chris1111.github.io/My-Github-Pages/">
+
+![Pranesh's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=chris1111&show_icons=true&theme=radical)
+
 </p>
 
 <a href="https://chris1111.github.io/My-Github-Pages/">
