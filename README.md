@@ -1,7 +1,7 @@
 ### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 
-### Hope to meet you 🤝 on one of my project.
+### Hope to meet you 🤝 on one of my project. 
 
-
+<img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=gift&color=%23198754&message=&style=for-the-badge&tz=US%2FEastern">
 <p align="center">
 
 
