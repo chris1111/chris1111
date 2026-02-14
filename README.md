@@ -17,7 +17,7 @@
 </p>
 
 
-## My ➡︎ [Github Pages](https://chris1111.github.io/My-Github-Pages/)
+## Visit my pages ➡︎ [Github Pages](https://chris1111.github.io/My-Github-Pages/)
 - [All ➤ Github Project](https://github.com/chris1111?tab=repositories)
 
 ----------------------------------------------------------------------
