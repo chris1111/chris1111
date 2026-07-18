@@ -16,8 +16,6 @@
 <img src="https://github.com/chris1111/chris1111/blob/master/PICS/GITHUB-2026.png" width="1000px">
 </p>
 
-
-## Visit my pages ➡︎ [Github Pages](https://chris1111.github.io/My-Github-Pages/)
 - [All ➤ Github Project](https://github.com/chris1111?tab=repositories)
 
 ----------------------------------------------------------------------
@@ -46,3 +44,5 @@ macOS Utilities
 [SF-Symbols-Composer-PNG](https://github.com/chris1111/SF-Symbols-Composer-PNG)|[CreateApp-Platypus](https://github.com/chris1111/CreateApp-Platypus)|[Compress-PNG](https://github.com/chris1111/Compress-PNG)|[Download-macOS](https://github.com/chris1111/Download_Install_macOS)
 -|-|-|-
 <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/SF-Symbols-Composer-PNG.png" width="220px"></a>|<a href="https://github.com/chris1111/CreateApp-Platypus"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/CreateApp-Platypus.png" width="220px"></a>|<a href="https://github.com/chris1111/Compress-PNG"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Compress-PNG.png" width="220px"></a>|<a href="https://github.com/chris1111/Download_Install_macOS"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Download.png" width="220px"></a>
+
+## Visit my pages ➡︎ [Github Pages](https://chris1111.github.io/My-Github-Pages/)
