@@ -4,8 +4,8 @@
 <img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=github&color=%23198754&message=&style=for-the-badge&tz=US%2FEastern">
 <p align="center">
 
+## Visit my ➡︎ [Github Profile](https://chris1111.github.io/chris1111-Me/)
 
-<a href="https://chris1111.github.io/My-Github-Pages/">
 
 ![Pranesh's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=chris1111&show_icons=true&theme=radical)
 
