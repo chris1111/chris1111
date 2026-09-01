@@ -49,8 +49,11 @@
 
 <div align="center">
 
-🌟 Arctic Code Vault &nbsp;·&nbsp; 🔥 Streak Master &nbsp;·&nbsp; ⚡ Pull Shark &nbsp;·&nbsp; 🎯 Galaxy Brain &nbsp;·&nbsp; 💎 YOLO &nbsp;·&nbsp; 🚀 Star Striker
+🌟 Arctic Code Vault &nbsp;·&nbsp; ⚡ Pull Shark &nbsp;·&nbsp; 🎯 Galaxy Brain &nbsp;·&nbsp; 💎 YOLO
 
+</div>
+
+---
 **🔥 Longest Streak: 127 days**
 
 </div>
