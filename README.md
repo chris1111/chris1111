@@ -29,14 +29,17 @@
 ---
 
 ### 🛠 Tech Stack
+
 <p align="center">
   <a href="https://github.com/chris1111">
-    <img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=chris1111&show_icons=true&theme=radical" alt="chris1111's GitHub stats"/>
+    <img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=chris1111&show_icons=true&hide_border=true&bg_color=0d1117&title_color=FF8C00&icon_color=F97316&text_color=e6edf3&ring_color=FF8C00" alt="chris1111's GitHub stats"/>
   </a>
   <a href="https://github.com/chris1111">
-    <img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=chris1111&layout=compact&theme=radical" alt="chris1111's Top Languages"/>
+    <img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=chris1111&layout=compact&hide_border=true&bg_color=0d1117&title_color=FF8C00&text_color=e6edf3" alt="chris1111's Top Languages"/>
   </a>
 </p>
+
+---
 
 ### 🏆 Achievements
 
