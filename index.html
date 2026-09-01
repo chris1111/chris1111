@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chris1111 — GitHub Profile</title>
+    <title>chris1111 — Advance GitHub Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #0d1117; color: #e6edf3; overflow-x: hidden; }
+        body { font-family: 'Inter', sans-serif; background: #09090b; color: #f4f4f5; overflow-x: hidden; }
 
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #0d1117; }
-        ::-webkit-scrollbar-thumb { background: #21262d; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #30363d; }
+        ::-webkit-scrollbar-track { background: #09090b; }
+        ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
 
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
@@ -70,7 +70,7 @@
         .delay-1000 { animation-delay: 1s; }
 
         .hero-gradient {
-            background: linear-gradient(to bottom, #e6edf3, #a1a1aa);
+            background: linear-gradient(to bottom, #f4f4f5, #a1a1aa);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
         }
         .orange-gradient {
@@ -102,7 +102,7 @@
         }
 
         .stat-card {
-            transition: all 0.4s ease; border: 1px solid rgba(240,246,252,0.1);
+            transition: all 0.4s ease; border: 1px solid rgba(255,255,255,0.06);
         }
         .stat-card:hover {
             border-color: rgba(249,115,22,0.3); transform: translateY(-4px);
@@ -110,7 +110,7 @@
         }
 
         .repo-card {
-            transition: all 0.4s ease; border: 1px solid rgba(240,246,252,0.1);
+            transition: all 0.4s ease; border: 1px solid rgba(255,255,255,0.06);
         }
         .repo-card:hover {
             border-color: rgba(249,115,22,0.25); transform: translateY(-3px);
@@ -136,8 +136,8 @@
         }
 
         .tooltip {
-            position: absolute; background: #161b22;
-            border: 1px solid rgba(240,246,252,0.1); color: #e6edf3;
+            position: absolute; background: #1c1c22;
+            border: 1px solid rgba(255,255,255,0.1); color: #f4f4f5;
             padding: 6px 10px; border-radius: 6px; font-size: 11px;
             white-space: nowrap; pointer-events: none; z-index: 100;
             opacity: 0; transition: opacity 0.2s;
@@ -145,8 +145,8 @@
         }
 
         .nav-glass {
-            backdrop-filter: blur(12px); background: rgba(13,17,23,0.8);
-            border-bottom: 1px solid rgba(240,246,252,0.06);
+            backdrop-filter: blur(12px); background: rgba(9,9,11,0.8);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
         }
 
         .section-divider {
@@ -270,6 +270,7 @@
     </style>
 </head>
 <body>
+
 <div class="glow-bg" style="width:600px;height:400px;top:-100px;left:-200px;background:rgba(249,115,22,0.04);"></div>
 <div class="glow-bg" style="width:500px;height:500px;bottom:200px;right:-150px;background:rgba(249,115,22,0.03);"></div>
 <div class="glow-bg" style="width:400px;height:300px;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(34,197,94,0.02);"></div>
@@ -278,6 +279,10 @@
 <nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16 flex items-center px-6">
     <div class="max-w-5xl mx-auto w-full flex items-center justify-between">
         <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-gray-500 to-gray-600 flex items-center justify-center">
+                <span class="iconify text-white text-sm" data-icon="lucide:github"></span>
+            </div>
+            <span class="text-sm font-semibold tracking-tight text-zinc-100">chris1111</span>
         </div>
         <div class="hidden md:flex items-center gap-8">
             <a href="#contributions" class="text-xs font-medium text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-wider">Contributions</a>
@@ -286,6 +291,10 @@
             <a href="mailto:leblond1111@gmail.com" class="text-xs font-medium text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-wider">Contact</a>
             <img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=github&color=%23FF8C00&message=&style=for-the-badge&tz=US%2FEastern">
         </div>
+        <a href="https://github.com/chris1111" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-2 bg-zinc-100 text-zinc-900 rounded-lg text-xs font-semibold hover:scale-105 active:scale-95 transition-transform">
+            <span class="iconify text-sm" data-icon="lucide:external-link"></span>
+            View Github
+        </a>
     </div>
 </nav>
 
@@ -297,7 +306,7 @@
                 <div class="avatar-ring w-40 h-40 md:w-48 md:h-48 rounded-full border-2 border-orange-500/40 p-1">
                     <img src="https://avatars.githubusercontent.com/chris1111" alt="chris1111" class="w-full h-full rounded-full object-cover" onerror="this.src='https://picsum.photos/seed/chris1111gh/200/200.jpg'">
                 </div>
-                <div class="absolute bottom-2 right-2 w-5 h-5 rounded-full bg-green-500 border-4 border-[#0d1117]"></div>
+                <div class="absolute bottom-2 right-2 w-5 h-5 rounded-full bg-green-500 border-4 border-zinc-950"></div>
                 <div class="absolute -top-2 -right-2 badge-coder text-white text-[10px] font-bold px-2.5 py-1 rounded-full badge-glow">
                     Coder
                 </div>
@@ -306,7 +315,7 @@
 
         <div class="text-center md:text-left">
             <div class="animate-fade-in-up delay-100">
-                <p class="text-orange-400 text-xs font-semibold uppercase tracking-[0.2em] mb-3">GitHub Profile</p>
+                <p class="text-orange-400 text-xs font-semibold uppercase tracking-[0.2em] mb-3">Advance GitHub Profile</p>
             </div>
             <h1 class="animate-fade-in-up delay-200 text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
                 <span class="hero-gradient">chris</span><span class="orange-gradient">1111</span>
@@ -316,9 +325,6 @@
             </div>
             <div class="animate-fade-in-up delay-300 mb-6 h-6">
                 <span class="typewriter-text text-zinc-400 text-sm font-light">Life is short, you have to make the most of it.</span>
-            </div>
-             <div class="animate-fade-in-up delay-300 mb-6 h-6">
-                <span class="typewriter-text text-zinc-400 text-sm font-light">Hope to meet you 🤝 on one of my project.</span>
             </div>
             <div class="animate-fade-in-up delay-400 flex flex-wrap items-center justify-center md:justify-start gap-4 mb-8">
                 <span class="flex items-center gap-1.5 text-xs text-zinc-500">
@@ -336,7 +342,7 @@
                 <a href="https://github.com/chris1111" target="_blank" rel="noopener" class="flex items-center gap-2 px-6 py-3.5 bg-zinc-100 text-zinc-900 rounded-xl text-sm font-semibold hover:scale-105 active:scale-95 transition-transform shadow-lg shadow-white/5">
                     <span class="iconify text-base" data-icon="lucide:github"></span> Follow on GitHub
                 </a>
-                <button onclick="document.getElementById('contributions').scrollIntoView({behavior:'smooth'})" class="flex items-center gap-2 px-6 py-3.5 border border-[#30363d] text-zinc-300 rounded-xl text-sm font-medium hover:border-orange-500/30 hover:text-orange-400 transition-all">
+                <button onclick="document.getElementById('contributions').scrollIntoView({behavior:'smooth'})" class="flex items-center gap-2 px-6 py-3.5 border border-zinc-800 text-zinc-300 rounded-xl text-sm font-medium hover:border-orange-500/30 hover:text-orange-400 transition-all">
                     <span class="iconify text-base" data-icon="lucide:arrow-down"></span> Explore
                 </button>
             </div>
@@ -346,7 +352,7 @@
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in-up delay-1000">
         <div class="flex flex-col items-center gap-2 text-zinc-600">
             <span class="text-[10px] uppercase tracking-widest">Scroll</span>
-            <div class="w-5 h-8 rounded-full border border-[#30363d] flex items-start justify-center p-1">
+            <div class="w-5 h-8 rounded-full border border-zinc-800 flex items-start justify-center p-1">
                 <div class="w-1 h-2 rounded-full bg-orange-500 animate-bounce"></div>
             </div>
         </div>
@@ -356,8 +362,6 @@
 <div class="section-divider max-w-5xl mx-auto"></div>
 <br>
 <div align="center">
-<h3>Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎</h3>
-<br>
 <img src="PICS/GITHUB-2026.png" width="800px">
 </div>
 
@@ -447,28 +451,28 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center">
+            <div class="reveal stat-card bg-zinc-900/40 rounded-2xl p-6 text-center">
                 <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
                     <span class="iconify text-orange-400 text-lg" data-icon="lucide:git-commit-horizontal"></span>
                 </div>
                 <div class="text-2xl md:text-3xl font-bold text-zinc-100 mb-1" data-count="3847">0</div>
                 <div class="text-xs text-zinc-500 uppercase tracking-wider">Contributions</div>
             </div>
-            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center" style="transition-delay:0.1s">
+            <div class="reveal stat-card bg-zinc-900/40 rounded-2xl p-6 text-center" style="transition-delay:0.1s">
                 <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
                     <span class="iconify text-orange-400 text-lg" data-icon="lucide:folder-git-2"></span>
                 </div>
                 <div class="text-2xl md:text-3xl font-bold text-zinc-100 mb-1" data-count="272">0</div>
                 <div class="text-xs text-zinc-500 uppercase tracking-wider">Repositories</div>
             </div>
-            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center" style="transition-delay:0.2s">
+            <div class="reveal stat-card bg-zinc-900/40 rounded-2xl p-6 text-center" style="transition-delay:0.2s">
                 <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
                     <span class="iconify text-orange-400 text-lg" data-icon="lucide:star"></span>
                 </div>
                 <div class="text-2xl md:text-3xl font-bold text-zinc-100 mb-1" data-count="6800">0</div>
                 <div class="text-xs text-zinc-500 uppercase tracking-wider">Stars Earned</div>
             </div>
-            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center" style="transition-delay:0.3s">
+            <div class="reveal stat-card bg-zinc-900/40 rounded-2xl p-6 text-center" style="transition-delay:0.3s">
                 <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
                     <span class="iconify text-orange-400 text-lg" data-icon="lucide:users"></span>
                 </div>
@@ -478,22 +482,24 @@
         </div>
 
         <div class="grid grid-cols-3 gap-4 mt-4">
-            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-5 text-center">
+            <div class="reveal stat-card bg-zinc-900/40 rounded-2xl p-5 text-center">
                 <div class="text-lg font-bold text-zinc-200 mb-0.5" data-count="23">0</div>
                 <div class="text-[10px] text-zinc-500 uppercase tracking-wider">Following</div>
             </div>
-            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-5 text-center" style="transition-delay:0.1s">
+            <div class="reveal stat-card bg-zinc-900/40 rounded-2xl p-5 text-center" style="transition-delay:0.1s">
                 <div class="text-lg font-bold text-zinc-200 mb-0.5" data-count="312">0</div>
                 <div class="text-[10px] text-zinc-500 uppercase tracking-wider">Pull Requests</div>
             </div>
-            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-5 text-center" style="transition-delay:0.2s">
+            <div class="reveal stat-card bg-zinc-900/40 rounded-2xl p-5 text-center" style="transition-delay:0.2s">
                 <div class="text-lg font-bold text-zinc-200 mb-0.5" data-count="187">0</div>
                 <div class="text-[10px] text-zinc-500 uppercase tracking-wider">Issues Closed</div>
             </div>
         </div>
     </div>
 </section>
+
 <div class="section-divider max-w-5xl mx-auto"></div>
+
 <!-- Languages Section -->
 <section class="py-24 px-6">
     <div class="max-w-5xl mx-auto">
@@ -503,7 +509,7 @@
         </div>
 
         <div class="reveal grid md:grid-cols-2 gap-8">
-            <div class="bg-[#161b22]/60 rounded-2xl p-6 border border-[#30363d]">
+            <div class="bg-zinc-900/40 rounded-2xl p-6 border border-white/[0.06]">
                 <div class="lang-bar mb-6">
                     <div class="flex h-full">
                         <div class="lang-segment bg-orange-500" style="width:0%" data-width="38%"></div>
@@ -542,32 +548,32 @@
                 </div>
             </div>
 
-            <div class="bg-[#161b22]/60 rounded-2xl p-6 border border-[#30363d]">
+            <div class="bg-zinc-900/40 rounded-2xl p-6 border border-white/[0.06]">
                 <h3 class="text-sm font-semibold text-zinc-200 mb-5 flex items-center gap-2">
                     <span class="iconify text-orange-400" data-icon="lucide:trophy"></span> Achievements
                 </h3>
                 <div class="grid grid-cols-3 gap-3">
-                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-zinc-800/30 hover:bg-zinc-800/50 transition-colors cursor-default group">
                         <div class="text-3xl group-hover:scale-110 transition-transform">🌟</div>
                         <span class="text-[10px] text-zinc-500 text-center leading-tight">Arctic Code Vault</span>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-zinc-800/30 hover:bg-zinc-800/50 transition-colors cursor-default group">
                         <div class="text-3xl group-hover:scale-110 transition-transform">🔥</div>
                         <span class="text-[10px] text-zinc-500 text-center leading-tight">Streak Master</span>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-zinc-800/30 hover:bg-zinc-800/50 transition-colors cursor-default group">
                         <div class="text-3xl group-hover:scale-110 transition-transform">⚡</div>
                         <span class="text-[10px] text-zinc-500 text-center leading-tight">Pull Shark</span>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-zinc-800/30 hover:bg-zinc-800/50 transition-colors cursor-default group">
                         <div class="text-3xl group-hover:scale-110 transition-transform">🎯</div>
                         <span class="text-[10px] text-zinc-500 text-center leading-tight">Galaxy Brain</span>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-zinc-800/30 hover:bg-zinc-800/50 transition-colors cursor-default group">
                         <div class="text-3xl group-hover:scale-110 transition-transform">💎</div>
                         <span class="text-[10px] text-zinc-500 text-center leading-tight">YOLO</span>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-zinc-800/30 hover:bg-zinc-800/50 transition-colors cursor-default group">
                         <div class="text-3xl group-hover:scale-110 transition-transform">🚀</div>
                         <span class="text-[10px] text-zinc-500 text-center leading-tight">Star Striker</span>
                     </div>
@@ -601,7 +607,7 @@
 
         <div class="grid md:grid-cols-2 gap-4">
                
-              <a href="https://github.com/chris1111/Workshop-Layered-Image-Studio" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+              <a href="https://github.com/chris1111/Workshop-Layered-Image-Studio" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Workshop.png" width="150px">
@@ -619,7 +625,7 @@
                 </div>
             </a>
         
-              <a href="https://github.com/chris1111/Image-Resizer" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+              <a href="https://github.com/chris1111/Image-Resizer" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/ImageResizer.png" width="150px">
@@ -637,7 +643,7 @@
                 </div>
             </a>
         
-              <a href="https://github.com/chris1111/OpenCanopy-Generator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+              <a href="https://github.com/chris1111/OpenCanopy-Generator" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/OpenCanopy-Generator.png" width="150px">
@@ -655,7 +661,7 @@
                 </div>
             </a>
 
-            <a href="https://chris1111.github.io/Icon-Studio/" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+            <a href="https://chris1111.github.io/Icon-Studio/" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.05s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Studio.png" width="150px">
@@ -673,7 +679,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Dell-Optiplex-790" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+            <a href="https://github.com/chris1111/Dell-Optiplex-790" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Optiplex-790.png" width="150px">
@@ -691,7 +697,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Background-Resizer" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+            <a href="https://github.com/chris1111/Background-Resizer" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.05s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Background-Resizer.png" width="150px">
@@ -709,7 +715,7 @@
                 </div>
             </a>
         
-             <a href="https://github.com/chris1111/Clover-Duet" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+             <a href="https://github.com/chris1111/Clover-Duet" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Clover-Duet.png" width="150px">
@@ -727,7 +733,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/SnapLink-Images" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+            <a href="https://github.com/chris1111/SnapLink-Images" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.05s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/SnapLink-Images.png" width="150px">
@@ -745,7 +751,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+            <a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Wireless-USB-Big-Sur-Adapter.png" width="150px">
@@ -763,7 +769,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+            <a href="https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.05s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Wireless-USB-Big-Sur-Adapter.png" width="150px">
@@ -781,7 +787,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/WirelessAdapterCloverBigSur" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.1s">
+            <a href="https://github.com/chris1111/WirelessAdapterCloverBigSur" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.1s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Wireless-USB-Big-Sur-Adapter.png" width="150px">
@@ -799,7 +805,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/D-LinkUtility-Package" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.15s">
+            <a href="https://github.com/chris1111/D-LinkUtility-Package" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.15s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Wifi-Mediatek-macOS.png" width="150px">
@@ -816,7 +822,8 @@
                     <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 5</span>
                 </div>
             </a>
-             <a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.2s">
+
+            <a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.2s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                        <img src="PICS/HP-Probook-EliteBook-Package-Creator-OC.png" width="150px">
@@ -834,7 +841,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/OpenCore-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.25s">
+            <a href="https://github.com/chris1111/OpenCore-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.25s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/OpenCoreCreator.png" width="150px">
@@ -852,7 +859,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/My-Simple-OC-Themes" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.3s">
+            <a href="https://github.com/chris1111/My-Simple-OC-Themes" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.3s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Themes-OpenCore.png" width="150px">
@@ -870,7 +877,7 @@
                 </div>
             </a>
             
-            <a href="https://htmlpreview.github.io/?https://github.com/CloverHackyColor/CloverThemes/blob/chris1111/index.html" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.3s">
+            <a href="https://htmlpreview.github.io/?https://github.com/CloverHackyColor/CloverThemes/blob/chris1111/index.html" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.3s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Themes-OpenCore.png" width="150px">
@@ -888,7 +895,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/MacEFIMounter" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.35s">
+            <a href="https://github.com/chris1111/MacEFIMounter" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.35s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/MacEFI-Mounter.png" width="150px">
@@ -906,7 +913,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/HP-EliteBook-840-G4" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.4s">
+            <a href="https://github.com/chris1111/HP-EliteBook-840-G4" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.4s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/HP-EliteBook-840-G4.png" width="150px">
@@ -924,7 +931,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Snow-Leopard-DVD-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.45s">
+            <a href="https://github.com/chris1111/Snow-Leopard-DVD-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.45s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Snow-DVD-Creator.png" width="150px">
@@ -942,7 +949,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Lion-DVD-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.5s">
+            <a href="https://github.com/chris1111/Lion-DVD-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.5s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Lion-DVD-Creator.png" width="150px">
@@ -960,7 +967,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Chameleon" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.55s">
+            <a href="https://github.com/chris1111/Chameleon" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.55s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Chameleon.png" width="150px">
@@ -977,7 +984,8 @@
                     <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> </span>
                 </div>
             </a>
-             <a href="https://github.com/chris1111/IconSet-Tahoe-Style-Linux-Mac" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.6s">
+
+            <a href="https://github.com/chris1111/IconSet-Tahoe-Style-Linux-Mac" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.6s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/IconSet-Tahoe-Style-Linux-Mac.png" width="150px">
@@ -995,7 +1003,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/chris1111/Compress-PNG" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.65s">
+            <a href="https://github.com/chris1111/Compress-PNG" target="_blank" rel="noopener" class="reveal repo-card bg-zinc-900/40 rounded-2xl p-6 block" style="transition-delay:0.65s">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-2 min-w-0">
                         <img src="PICS/Compress-PNG.png" width="150px">
@@ -1017,7 +1025,7 @@
 
         <div class="reveal text-center mt-8">
             <a href="https://github.com/chris1111?tab=repositories" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-orange-400 hover:text-orange-300 transition-colors font-medium">
-                <p style="font-size: 20px;">View all repositories</p>
+                View all repositories
                 <span class="iconify" data-icon="lucide:arrow-right"></span>
             </a>
         </div>
@@ -1025,16 +1033,20 @@
 </section>
 
 <div align="center">
+    <img src="PICS/GlassSupport.png" alt="Support Donate" style="width:20%;">
+    <right><br><strong></strong>
     <form style="" target="_top" method="post" action="https://www.paypal.com/cgi-bin/webscr">
-    <input value="_donations" name="cmd" type="hidden"><input value="leblond1111@gmail.com" name="business" type="hidden"><input value="EN" name="lc" type="hidden"><input value="chris1111 Github" name="item_name" type="hidden"><input value="0" name="no_note" type="hidden"><input value="EUR" name="currency_code" type="hidden"><input value="PP-DonationsBF:don13.png:NonHostedGuest" name="bn" type="hidden"><input alt="PayPal - The simplest and most secure online payment solution!" name="submit" border="0" src="PICS/PayPal-Donate-Button.png" type="image"><img style="width: 1px; height: 1px;" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" border="0" alt="">
+                    <input value="_donations" name="cmd" type="hidden"><input value="leblond1111@gmail.com" name="business" type="hidden"><input value="EN" name="lc" type="hidden"><input value="chris1111 Github" name="item_name" type="hidden"><input value="0" name="no_note" type="hidden"><input value="EUR" name="currency_code" type="hidden"><input value="PP-DonationsBF:don13.png:NonHostedGuest" name="bn" type="hidden"><input alt="PayPal - The simplest and most secure online payment solution!" name="submit" border="0" src="PICS/PayPal-Donate-Button.png" type="image"><img style="width: 1px; height: 1px;" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" border="0" alt="">
     </form>
-    <img src="PICS/GlassSupport.png" alt="Support Donate" style="width:25%;">
+    <strong>
+    </strong>
+   </right>
  </div>
 
 <div class="section-divider max-w-5xl mx-auto"></div>
 
 <!-- Footer -->
-<footer class="border-t border-[#30363d]/50 py-12 px-6">
+<footer class="border-t border-zinc-800/50 py-12 px-6">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div class="flex items-center gap-3">
             <div class="w-6 h-6 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
@@ -1146,7 +1158,8 @@ function renderContribGrid(year) {
         }
         grid.appendChild(weekCol);
     }
- document.getElementById('year-label').textContent = year;
+
+    document.getElementById('year-label').textContent = year;
 
     if (isFuture) {
         yearTotalEl.className = 'future-gradient font-bold text-lg';
@@ -1192,8 +1205,8 @@ function updateTabStyles() {
             tab.style.color = '#f97316';
             tab.style.border = '1px solid rgba(249,115,22,0.3)';
         } else {
-            tab.style.background = 'rgba(48,54,61,0.5)';
-            tab.style.color = '#8b949e';
+            tab.style.background = 'rgba(39,39,42,0.5)';
+            tab.style.color = '#71717a';
             tab.style.border = '1px solid transparent';
         }
     });
@@ -1255,9 +1268,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        nav.style.borderBottomColor = 'rgba(240,246,252,0.1)';
+        nav.style.borderBottomColor = 'rgba(255,255,255,0.08)';
     } else {
-        nav.style.borderBottomColor = 'rgba(240,246,252,0.06)';
+        nav.style.borderBottomColor = 'rgba(255,255,255,0.04)';
     }
 });
 
