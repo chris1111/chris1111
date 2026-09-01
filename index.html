@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chris1111 — GitHub Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #0d1117; color: #e6edf3; overflow-x: hidden; }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0d1117; }
+        ::-webkit-scrollbar-thumb { background: #21262d; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #30363d; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes pulse-orange {
+            0% { box-shadow: 0 0 0 0 rgba(249,115,22,0.5); }
+            70% { box-shadow: 0 0 0 10px rgba(249,115,22,0); }
+            100% { box-shadow: 0 0 0 0 rgba(249,115,22,0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes cellPop {
+            from { opacity: 0; transform: scale(0); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes borderGlow {
+            0%, 100% { border-color: rgba(249,115,22,0.2); }
+            50% { border-color: rgba(249,115,22,0.5); }
+        }
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        @keyframes futurePulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+        @keyframes crystalSpin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-1000 { animation-delay: 1s; }
+
+        .hero-gradient {
+            background: linear-gradient(to bottom, #e6edf3, #a1a1aa);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .orange-gradient {
+            background: linear-gradient(135deg, #f97316, #fb923c, #f59e0b);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .future-gradient {
+            background: linear-gradient(135deg, #a78bfa, #818cf8, #c084fc);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        .contrib-cell {
+            width: 11px; height: 11px; border-radius: 2px;
+            transition: all 0.2s ease; cursor: pointer;
+        }
+        .contrib-cell:hover {
+            transform: scale(1.8); outline: 1px solid rgba(249,115,22,0.6);
+            z-index: 10; position: relative;
+        }
+        .level-0 { background: #161b22; }
+        .level-1 { background: #0e4429; }
+        .level-2 { background: #006d32; }
+        .level-3 { background: #26a641; }
+        .level-4 { background: #39d353; }
+        .level-future {
+            background: #161b22;
+            animation: futurePulse 2s ease-in-out infinite;
+            border: 1px solid rgba(139,92,246,0.15);
+        }
+
+        .stat-card {
+            transition: all 0.4s ease; border: 1px solid rgba(240,246,252,0.1);
+        }
+        .stat-card:hover {
+            border-color: rgba(249,115,22,0.3); transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5), 0 0 30px -10px rgba(249,115,22,0.15);
+        }
+
+        .repo-card {
+            transition: all 0.4s ease; border: 1px solid rgba(240,246,252,0.1);
+        }
+        .repo-card:hover {
+            border-color: rgba(249,115,22,0.25); transform: translateY(-3px);
+            box-shadow: 0 12px 35px -10px rgba(0,0,0,0.5);
+        }
+        .repo-card:hover .repo-name { color: #f97316; }
+        .repo-card:hover .repo-arrow { opacity: 1; transform: translateX(0); }
+        .repo-card:hover .repo-icon { color: #f97316; }
+        .repo-name { transition: color 0.3s ease; }
+        .repo-arrow { opacity: 0; transform: translateX(-4px); transition: all 0.3s ease; }
+        .repo-icon { transition: color 0.3s ease; }
+
+        .lang-bar { height: 8px; border-radius: 4px; overflow: hidden; background: #161b22; }
+        .lang-segment { height: 100%; transition: width 1.5s ease-out; }
+
+        .avatar-ring {
+            animation: borderGlow 3s ease-in-out infinite, pulse-orange 2.5s infinite;
+        }
+
+        .glow-bg {
+            position: absolute; border-radius: 9999px;
+            filter: blur(120px); pointer-events: none;
+        }
+
+        .tooltip {
+            position: absolute; background: #161b22;
+            border: 1px solid rgba(240,246,252,0.1); color: #e6edf3;
+            padding: 6px 10px; border-radius: 6px; font-size: 11px;
+            white-space: nowrap; pointer-events: none; z-index: 100;
+            opacity: 0; transition: opacity 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        .nav-glass {
+            backdrop-filter: blur(12px); background: rgba(13,17,23,0.8);
+            border-bottom: 1px solid rgba(240,246,252,0.06);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(249,115,22,0.3), transparent);
+        }
+
+        .streak-fire { animation: float 2s ease-in-out infinite; }
+
+        .activity-dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: #f97316; box-shadow: 0 0 8px rgba(249,115,22,0.5);
+        }
+
+        .reveal {
+            opacity: 0; transform: translateY(20px); transition: all 0.7s ease-out;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        .typewriter-text {
+            display: inline-block; overflow: hidden; white-space: nowrap;
+            border-right: 2px solid #f97316;
+            animation: typewriter 2.5s steps(30) 0.8s forwards, blink 0.8s step-end infinite;
+            width: 0;
+        }
+
+        .badge-coder {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        .badge-glow { box-shadow: 0 0 15px rgba(249,115,22,0.3); }
+
+        .repo-count-badge {
+            background: rgba(249,115,22,0.08);
+            border: 1px solid rgba(249,115,22,0.15);
+        }
+
+        .future-tab {
+            position: relative;
+            overflow: hidden;
+        }
+        .future-tab::before {
+            content: '🔮';
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .future-tab:hover::before,
+        .future-tab.active::before {
+            opacity: 1;
+        }
+        .future-tab.active,
+        .future-tab:hover {
+            background: rgba(139,92,246,0.15) !important;
+            color: #a78bfa !important;
+            border: 1px solid rgba(139,92,246,0.3) !important;
+        }
+
+        .future-banner {
+            background: linear-gradient(135deg, rgba(139,92,246,0.1), rgba(168,85,247,0.05));
+            border: 1px solid rgba(139,92,246,0.2);
+            animation: futurePulse 3s ease-in-out infinite;
+        }
+
+        /* === Back to Top Button === */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px) scale(0.8);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            z-index: 60;
+            box-shadow: 0 8px 24px -6px rgba(249,115,22,0.5), 0 0 0 0 rgba(249,115,22,0.4);
+            border: 1px solid rgba(249,115,22,0.5);
+            outline: none;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+            animation: pulse-orange 2.5s infinite;
+        }
+        .back-to-top:hover {
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: 0 14px 32px -6px rgba(249,115,22,0.7);
+        }
+        .back-to-top:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+        .back-to-top .iconify {
+            color: #fff;
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+        .back-to-top:hover .iconify {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .contrib-cell { width: 8px; height: 8px; }
+            .contrib-cell:hover { transform: scale(1.5); }
+            .back-to-top { bottom: 1.25rem; right: 1.25rem; width: 46px; height: 46px; }
+            .back-to-top .iconify { font-size: 19px; }
+        }
+    </style>
+</head>
+<body>
+<div class="glow-bg" style="width:600px;height:400px;top:-100px;left:-200px;background:rgba(249,115,22,0.04);"></div>
+<div class="glow-bg" style="width:500px;height:500px;bottom:200px;right:-150px;background:rgba(249,115,22,0.03);"></div>
+<div class="glow-bg" style="width:400px;height:300px;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(34,197,94,0.02);"></div>
+
+<!-- Navigation -->
+<nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16 flex items-center px-6">
+    <div class="max-w-5xl mx-auto w-full flex items-center justify-between">
+        <div class="flex items-center gap-3">
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a href="#contributions" class="text-xs font-medium text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-wider">Contributions</a>
+            <a href="#stats" class="text-xs font-medium text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-wider">Stats</a>
+            <a href="#repos" class="text-xs font-medium text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-wider">Repositories</a>
+            <a href="mailto:leblond1111@gmail.com" class="text-xs font-medium text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-wider">Contact</a>
+            <img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=github&color=%23FF8C00&message=&style=for-the-badge&tz=US%2FEastern">
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center pt-16 relative">
+    <div class="max-w-5xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+        <div class="animate-fade-in-up flex-shrink-0">
+            <div class="relative">
+                <div class="avatar-ring w-40 h-40 md:w-48 md:h-48 rounded-full border-2 border-orange-500/40 p-1">
+                    <img src="https://avatars.githubusercontent.com/chris1111" alt="chris1111" class="w-full h-full rounded-full object-cover" onerror="this.src='https://picsum.photos/seed/chris1111gh/200/200.jpg'">
+                </div>
+                <div class="absolute bottom-2 right-2 w-5 h-5 rounded-full bg-green-500 border-4 border-[#0d1117]"></div>
+                <div class="absolute -top-2 -right-2 badge-coder text-white text-[10px] font-bold px-2.5 py-1 rounded-full badge-glow">
+                    Coder
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center md:text-left">
+            <div class="animate-fade-in-up delay-100">
+                <p class="text-orange-400 text-xs font-semibold uppercase tracking-[0.2em] mb-3">GitHub Profile</p>
+            </div>
+            <h1 class="animate-fade-in-up delay-200 text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
+                <span class="hero-gradient">chris</span><span class="orange-gradient">1111</span>
+            </h1>
+            <div class="animate-fade-in-up delay-300 mb-6 h-6">
+                <span class="typewriter-text text-zinc-400 text-sm font-light">Building things that matter, one commit at a time.</span>
+            </div>
+            <div class="animate-fade-in-up delay-300 mb-6 h-6">
+                <span class="typewriter-text text-zinc-400 text-sm font-light">Life is short, you have to make the most of it.</span>
+            </div>
+             <div class="animate-fade-in-up delay-300 mb-6 h-6">
+                <span class="typewriter-text text-zinc-400 text-sm font-light">Hope to meet you 🤝 on one of my project.</span>
+            </div>
+            <div class="animate-fade-in-up delay-400 flex flex-wrap items-center justify-center md:justify-start gap-4 mb-8">
+                <span class="flex items-center gap-1.5 text-xs text-zinc-500">
+                    <span class="iconify text-sm" data-icon="lucide:map-pin"></span> GitHub
+                </span>
+                <span class="flex items-center gap-1.5 text-xs text-zinc-500">
+                    <span class="iconify text-sm" data-icon="lucide:calendar"></span> Joined GitHub
+                </span>
+                <span class="flex items-center gap-1.5 text-xs text-zinc-500">
+                    <span class="iconify text-sm" data-icon="lucide:users"></span>
+                    <span id="follower-count">0</span> followers
+                </span>
+            </div>
+            <div class="animate-fade-in-up delay-500 flex flex-wrap items-center justify-center md:justify-start gap-3">
+                <a href="https://github.com/chris1111" target="_blank" rel="noopener" class="flex items-center gap-2 px-6 py-3.5 bg-zinc-100 text-zinc-900 rounded-xl text-sm font-semibold hover:scale-105 active:scale-95 transition-transform shadow-lg shadow-white/5">
+                    <span class="iconify text-base" data-icon="lucide:github"></span> Follow on GitHub
+                </a>
+                <button onclick="document.getElementById('contributions').scrollIntoView({behavior:'smooth'})" class="flex items-center gap-2 px-6 py-3.5 border border-[#30363d] text-zinc-300 rounded-xl text-sm font-medium hover:border-orange-500/30 hover:text-orange-400 transition-all">
+                    <span class="iconify text-base" data-icon="lucide:arrow-down"></span> Explore
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in-up delay-1000">
+        <div class="flex flex-col items-center gap-2 text-zinc-600">
+            <span class="text-[10px] uppercase tracking-widest">Scroll</span>
+            <div class="w-5 h-8 rounded-full border border-[#30363d] flex items-start justify-center p-1">
+                <div class="w-1 h-2 rounded-full bg-orange-500 animate-bounce"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-5xl mx-auto"></div>
+<br>
+<div align="center">
+<h3>Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎</h3>
+<br>
+<img src="PICS/GITHUB-2026.png" width="800px">
+</div>
+
+<!-- Contribution Graph Section -->
+<section id="contributions" class="py-24 px-6 relative">
+    <div class="max-w-5xl mx-auto">
+        <div class="reveal text-center mb-12">
+            <p class="text-orange-400 text-xs font-semibold uppercase tracking-[0.15em] mb-3">Contribution Activity</p>
+            <h2 class="text-2xl md:text-4xl font-bold tracking-tight hero-gradient mb-3">Years of Consistency</h2>
+            <p class="text-zinc-500 text-sm max-w-lg mx-auto">Every green square represents a day of code. The darker the green, the more contributions made that day.</p>
+        </div>
+
+        <div class="reveal flex items-center justify-center gap-2 mb-8 flex-wrap" id="year-tabs">
+            <button onclick="switchYear('2026')" class="year-tab active px-4 py-1.5 rounded-full text-xs font-medium transition-all" data-year="2026">2026</button>
+            <button onclick="switchYear('2025')" class="year-tab px-4 py-1.5 rounded-full text-xs font-medium transition-all" data-year="2025">2025</button>
+            <button onclick="switchYear('2024')" class="year-tab px-4 py-1.5 rounded-full text-xs font-medium transition-all" data-year="2024">2024</button>
+            <button onclick="switchYear('2023')" class="year-tab px-4 py-1.5 rounded-full text-xs font-medium transition-all" data-year="2023">2023</button>
+            <button onclick="switchYear('2022')" class="year-tab px-4 py-1.5 rounded-full text-xs font-medium transition-all" data-year="2022">2022</button>
+            <button onclick="switchYear('2021')" class="year-tab px-4 py-1.5 rounded-full text-xs font-medium transition-all" data-year="2021">2021</button>
+        </div>
+
+        <!-- Future banner for 2026 -->
+        <div id="future-banner" class="reveal future-banner rounded-2xl p-5 mb-6 flex items-center justify-center gap-3" style="display:none;">
+            <span class="text-2xl">🔮</span>
+            <div>
+                <p class="text-sm font-semibold text-violet-300">The future is not completely written</p>
+                <p class="text-xs text-violet-400/60">2026 contributions are still being dreamed up...</p>
+            </div>
+            <span class="text-2xl ml-2" style="animation: crystalSpin 4s linear infinite;">💎</span>
+        </div>
+
+        <div class="reveal overflow-x-auto pb-4">
+            <div class="min-w-[720px]">
+                <div class="flex gap-[3px] mb-2 pl-8">
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Jan</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Feb</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Mar</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Apr</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">May</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Jun</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Jul</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Aug</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Sep</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Oct</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Nov</div>
+                    <div class="text-[10px] text-zinc-600" style="width:52px">Dec</div>
+                </div>
+                <div class="flex gap-[3px]">
+                    <div class="flex flex-col gap-[3px] mr-1">
+                        <div class="h-[11px] flex items-center text-[10px] text-zinc-600">Mon</div>
+                        <div class="h-[11px]"></div>
+                        <div class="h-[11px] flex items-center text-[10px] text-zinc-600">Wed</div>
+                        <div class="h-[11px]"></div>
+                        <div class="h-[11px] flex items-center text-[10px] text-zinc-600">Fri</div>
+                        <div class="h-[11px]"></div>
+                        <div class="h-[11px]"></div>
+                    </div>
+                    <div id="contrib-grid" class="flex gap-[3px]"></div>
+                </div>
+                <div class="flex items-center justify-end gap-2 mt-3">
+                    <span class="text-[10px] text-zinc-600">Less</span>
+                    <div class="contrib-cell level-0" style="width:11px;height:11px;"></div>
+                    <div class="contrib-cell level-1" style="width:11px;height:11px;"></div>
+                    <div class="contrib-cell level-2" style="width:11px;height:11px;"></div>
+                    <div class="contrib-cell level-3" style="width:11px;height:11px;"></div>
+                    <div class="contrib-cell level-4" style="width:11px;height:11px;"></div>
+                    <span class="text-[10px] text-zinc-600">More</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal flex items-center justify-center gap-3 mt-8">
+            <span class="streak-fire text-2xl">🔥</span>
+            <span class="text-zinc-300 text-sm"><span id="year-total" class="text-orange-400 font-bold text-lg">0</span> contributions in <span id="year-label">2026</span></span>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-5xl mx-auto"></div>
+
+<!-- Stats Section -->
+<section id="stats" class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+        <div class="reveal text-center mb-12">
+            <p class="text-orange-400 text-xs font-semibold uppercase tracking-[0.15em] mb-3">Overview</p>
+            <h2 class="text-2xl md:text-4xl font-bold tracking-tight hero-gradient">By The Numbers</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
+                    <span class="iconify text-orange-400 text-lg" data-icon="lucide:git-commit-horizontal"></span>
+                </div>
+                <div class="text-2xl md:text-3xl font-bold text-zinc-100 mb-1" data-count="3847">0</div>
+                <div class="text-xs text-zinc-500 uppercase tracking-wider">Contributions</div>
+            </div>
+            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center" style="transition-delay:0.1s">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
+                    <span class="iconify text-orange-400 text-lg" data-icon="lucide:folder-git-2"></span>
+                </div>
+                <div class="text-2xl md:text-3xl font-bold text-zinc-100 mb-1" data-count="272">0</div>
+                <div class="text-xs text-zinc-500 uppercase tracking-wider">Repositories</div>
+            </div>
+            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center" style="transition-delay:0.2s">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
+                    <span class="iconify text-orange-400 text-lg" data-icon="lucide:star"></span>
+                </div>
+                <div class="text-2xl md:text-3xl font-bold text-zinc-100 mb-1" data-count="6800">0</div>
+                <div class="text-xs text-zinc-500 uppercase tracking-wider">Stars Earned</div>
+            </div>
+            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-6 text-center" style="transition-delay:0.3s">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
+                    <span class="iconify text-orange-400 text-lg" data-icon="lucide:users"></span>
+                </div>
+                <div class="text-2xl md:text-3xl font-bold text-zinc-100 mb-1" data-count="1400">0</div>
+                <div class="text-xs text-zinc-500 uppercase tracking-wider">Followers</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mt-4">
+            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-5 text-center">
+                <div class="text-lg font-bold text-zinc-200 mb-0.5" data-count="23">0</div>
+                <div class="text-[10px] text-zinc-500 uppercase tracking-wider">Following</div>
+            </div>
+            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-5 text-center" style="transition-delay:0.1s">
+                <div class="text-lg font-bold text-zinc-200 mb-0.5" data-count="312">0</div>
+                <div class="text-[10px] text-zinc-500 uppercase tracking-wider">Pull Requests</div>
+            </div>
+            <div class="reveal stat-card bg-[#161b22]/60 rounded-2xl p-5 text-center" style="transition-delay:0.2s">
+                <div class="text-lg font-bold text-zinc-200 mb-0.5" data-count="187">0</div>
+                <div class="text-[10px] text-zinc-500 uppercase tracking-wider">Issues Closed</div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider max-w-5xl mx-auto"></div>
+<!-- Languages Section -->
+<section class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+        <div class="reveal text-center mb-12">
+            <p class="text-orange-400 text-xs font-semibold uppercase tracking-[0.15em] mb-3">Tech Stack</p>
+            <h2 class="text-2xl md:text-4xl font-bold tracking-tight hero-gradient">Languages Used</h2>
+        </div>
+
+        <div class="reveal grid md:grid-cols-2 gap-8">
+            <div class="bg-[#161b22]/60 rounded-2xl p-6 border border-[#30363d]">
+                <div class="lang-bar mb-6">
+                    <div class="flex h-full">
+                        <div class="lang-segment bg-orange-500" style="width:0%" data-width="38%"></div>
+                        <div class="lang-segment bg-blue-500" style="width:0%" data-width="24%"></div>
+                        <div class="lang-segment bg-yellow-400" style="width:0%" data-width="15%"></div>
+                        <div class="lang-segment bg-purple-500" style="width:0%" data-width="12%"></div>
+                        <div class="lang-segment bg-green-500" style="width:0%" data-width="8%"></div>
+                        <div class="lang-segment bg-zinc-600" style="width:0%" data-width="3%"></div>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-orange-500"></div><span class="text-sm text-zinc-300">Shell / Bash</span></div>
+                        <span class="text-xs text-zinc-500 font-mono">38%</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-blue-500"></div><span class="text-sm text-zinc-300">Python</span></div>
+                        <span class="text-xs text-zinc-500 font-mono">24%</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-yellow-400"></div><span class="text-sm text-zinc-300">JavaScript</span></div>
+                        <span class="text-xs text-zinc-500 font-mono">15%</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-purple-500"></div><span class="text-sm text-zinc-300">AppleScript</span></div>
+                        <span class="text-xs text-zinc-500 font-mono">12%</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-green-500"></div><span class="text-sm text-zinc-300">Ruby</span></div>
+                        <span class="text-xs text-zinc-500 font-mono">8%</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-zinc-600"></div><span class="text-sm text-zinc-300">Other</span></div>
+                        <span class="text-xs text-zinc-500 font-mono">3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#161b22]/60 rounded-2xl p-6 border border-[#30363d]">
+                <h3 class="text-sm font-semibold text-zinc-200 mb-5 flex items-center gap-2">
+                    <span class="iconify text-orange-400" data-icon="lucide:trophy"></span> Achievements
+                </h3>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                        <div class="text-3xl group-hover:scale-110 transition-transform">🌟</div>
+                        <span class="text-[10px] text-zinc-500 text-center leading-tight">Arctic Code Vault</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                        <div class="text-3xl group-hover:scale-110 transition-transform">🔥</div>
+                        <span class="text-[10px] text-zinc-500 text-center leading-tight">Streak Master</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                        <div class="text-3xl group-hover:scale-110 transition-transform">⚡</div>
+                        <span class="text-[10px] text-zinc-500 text-center leading-tight">Pull Shark</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                        <div class="text-3xl group-hover:scale-110 transition-transform">🎯</div>
+                        <span class="text-[10px] text-zinc-500 text-center leading-tight">Galaxy Brain</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                        <div class="text-3xl group-hover:scale-110 transition-transform">💎</div>
+                        <span class="text-[10px] text-zinc-500 text-center leading-tight">YOLO</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-[#21262d]/40 hover:bg-[#21262d]/70 transition-colors cursor-default group">
+                        <div class="text-3xl group-hover:scale-110 transition-transform">🚀</div>
+                        <span class="text-[10px] text-zinc-500 text-center leading-tight">Star Striker</span>
+                    </div>
+                </div>
+                <div class="mt-5 p-4 rounded-xl bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/10">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[10px] text-zinc-500 uppercase tracking-wider">Longest Streak</p>
+                            <p class="text-2xl font-bold text-orange-400 mt-1">127 <span class="text-sm font-normal text-zinc-500">days</span></p>
+                        </div>
+                        <div class="text-4xl streak-fire">🔥</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-5xl mx-auto"></div>
+
+<!-- Repositories Section -->
+<section id="repos" class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+        <div class="reveal text-center mb-4">
+            <p class="text-orange-400 text-xs font-semibold uppercase tracking-[0.15em] mb-3">Projects</p>
+            <h2 class="text-2xl md:text-4xl font-bold tracking-tight hero-gradient">Pinned Repositories</h2>
+        </div>
+        <div class="reveal flex items-center justify-center mb-12">
+            <span class="repo-count-badge text-xs font-medium text-orange-400 px-4 py-1.5 rounded-full">20 repositories pinned</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+               
+              <a href="https://github.com/chris1111/Workshop-Layered-Image-Studio" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Workshop.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Workshop-Layered-Image-Studio</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">The Workshop is a lightweight, privacy-first, browser-based image compositing tool designed for stacking and manipulating transparent images with pixel-perfect precision.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 93</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 14</span>
+                </div>
+            </a>
+        
+              <a href="https://github.com/chris1111/Image-Resizer" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/ImageResizer.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Image Resizer</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">This tool is for Resize & convert images to PNG — locally, under the stars.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 93</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 14</span>
+                </div>
+            </a>
+        
+              <a href="https://github.com/chris1111/OpenCanopy-Generator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/OpenCanopy-Generator.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">OpenCanopy-Generator</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">This tool is for create OpenCore Themes. create a set of Icon at the good size.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 93</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 14</span>
+                </div>
+            </a>
+
+            <a href="https://chris1111.github.io/Icon-Studio/" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Studio.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Icon-Studio</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Create and customize your Icon or Avatar in macOS.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 48</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 9</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Dell-Optiplex-790" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Optiplex-790.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Dell-Optiplex-790</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Dell-Optiplex-790 is to create a macOS bootable USB media. Support macOS Catalina to macOS Tahoe.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 12</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 2</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Background-Resizer" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Background-Resizer.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Background-Resizer</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">A tool to resize Background images for use with OpenCanopyGenerator.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 8</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 1</span>
+                </div>
+            </a>
+        
+             <a href="https://github.com/chris1111/Clover-Duet" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Clover-Duet.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Clover-Duet</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Script to Install Clover in the ESP (EFI System Partition) of the target volume for Bios Legacy booting.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 2</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> </span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/SnapLink-Images" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/SnapLink-Images.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">SnapLink-Images</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Upload any image, preview each one, grab download links individually, or bundle them all into a ZIP.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> HTML</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 1</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> </span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Wireless-USB-Big-Sur-Adapter.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Wireless-USB-Big-Sur-Adapter</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Wireless USB adapter support package for macOS Big Sur — enables Wi-Fi connectivity for compatible USB wireless dongles.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 1014</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 93</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.05s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Wireless-USB-Big-Sur-Adapter.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Wireless-USB-OC-Big-Sur-Adapter</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">OpenCore variant of the Wireless USB adapter package — tailored for OpenCore-based Hackintosh Big Sur installations.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 617</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 56</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/WirelessAdapterCloverBigSur" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.1s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Wireless-USB-Big-Sur-Adapter.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">WirelessAdapterCloverBigSur</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Clover bootloader edition of the wireless adapter package — full Wi-Fi support for Clover-based Big Sur systems.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 59</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 12</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/D-LinkUtility-Package" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.15s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Wifi-Mediatek-macOS.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">D-LinkUtility-Package</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">D-Link wireless USB adapter utility package for macOS — includes drivers, configuration tools, and installation scripts.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span> Shell, AppleScript</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 90</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 5</span>
+                </div>
+            </a>
+             <a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.2s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                       <img src="PICS/HP-Probook-EliteBook-Package-Creator-OC.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">HP-Probook-EliteBook-Pkg-Creator-OC</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Automated package creator for HP ProBook & EliteBook laptops using OpenCore — generates complete macOS installation packages.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span> Shell, Obective-C</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 151</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 23</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/OpenCore-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.25s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/OpenCoreCreator.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">OpenCore-Creator</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">GUI tool to create and configure OpenCore bootloaders — simplifies the process of building a custom EFI folder from scratch.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell, Obective-C</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 48</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 5</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/My-Simple-OC-Themes" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.3s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Themes-OpenCore.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">My-Simple-OC-Themes</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Collection of clean, minimal boot themes for OpenCore bootloader — custom SVG-based themes with a simple aesthetic.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span> SVG</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 281</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 37</span>
+                </div>
+            </a>
+            
+            <a href="https://htmlpreview.github.io/?https://github.com/CloverHackyColor/CloverThemes/blob/chris1111/index.html" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.3s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Themes-OpenCore.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Clover Boot Themes</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">A curated collection of meticulously crafted Clover themes featuring Apple-inspired aesthetics, minimal designs, and stunning visual flair. Choose your style and download in one click.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span> SVG</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 281</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 37</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/MacEFIMounter" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.35s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/MacEFI-Mounter.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">MacEFIMounter</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Mount and manage EFI partitions on macOS with a simple GUI — easily access, backup, and modify EFI folders from within macOS.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span> Shell, AppleScript</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 9</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 1</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/HP-EliteBook-840-G4" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.4s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/HP-EliteBook-840-G4.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">HP-EliteBook-840-G4</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Complete macOS guide and EFI for the HP EliteBook 840 G4 — includes all necessary kexts, configs, and step-by-step instructions.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell, AppleScript</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 24</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 10</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Snow-Leopard-DVD-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.45s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Snow-DVD-Creator.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Snow-Leopard-DVD-Creator</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Create a bootable macOS Snow Leopard DVD installer — automates the process of building a clean installation media.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 1</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> </span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Lion-DVD-Creator" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.5s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Lion-DVD-Creator.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Lion-DVD-Creator</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Create a bootable macOS Lion DVD installer — one-click tool to build a clean Lion installation disc from an Apple image.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 3</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> </span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Chameleon" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.55s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Chameleon.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Chameleon</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Chameleon bootloader custom builds and modifications — legacy bootloader support for macOS on non-Apple hardware.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span> Shell, Obective-C</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 2</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> </span>
+                </div>
+            </a>
+             <a href="https://github.com/chris1111/IconSet-Tahoe-Style-Linux-Mac" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.6s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/IconSet-Tahoe-Style-Linux-Mac.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">IconSet-Tahoe-Style-Linux-Mac</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Tahoe-style icon set for Linux and macOS — a clean, modern icon theme inspired by classic macOS design language.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> HTML</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 10</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 1</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/chris1111/Compress-PNG" target="_blank" rel="noopener" class="reveal repo-card bg-[#161b22]/60 rounded-2xl p-6 block" style="transition-delay:0.65s">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <img src="PICS/Compress-PNG.png" width="150px">
+                        <span class="iconify repo-icon text-zinc-500 flex-shrink-0" data-icon="lucide:book-open"></span>
+                        <span class="repo-name text-sm font-semibold text-zinc-200 truncate">Compress-PNG</span>
+                        <span class="iconify repo-arrow text-orange-400 flex-shrink-0 text-sm" data-icon="lucide:arrow-up-right"></span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-medium flex-shrink-0 ml-2">Public</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4 leading-relaxed">Simple PNG compression tool for macOS — batch-compress PNG images with lossless optimization to reduce file sizes.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> HTML, Shell</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:star"></span> 4</span>
+                    <span class="flex items-center gap-1 text-[10px] text-zinc-600"><span class="iconify text-xs" data-icon="lucide:git-fork"></span> 2</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="reveal text-center mt-8">
+            <a href="https://github.com/chris1111?tab=repositories" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-orange-400 hover:text-orange-300 transition-colors font-medium">
+                <p style="font-size: 20px;">View all repositories</p>
+                <span class="iconify" data-icon="lucide:arrow-right"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div align="center">
+    <form style="" target="_top" method="post" action="https://www.paypal.com/cgi-bin/webscr">
+    <input value="_donations" name="cmd" type="hidden"><input value="leblond1111@gmail.com" name="business" type="hidden"><input value="EN" name="lc" type="hidden"><input value="chris1111 Github" name="item_name" type="hidden"><input value="0" name="no_note" type="hidden"><input value="EUR" name="currency_code" type="hidden"><input value="PP-DonationsBF:don13.png:NonHostedGuest" name="bn" type="hidden"><input alt="PayPal - The simplest and most secure online payment solution!" name="submit" border="0" src="PICS/PayPal-Donate-Button.png" type="image"><img style="width: 1px; height: 1px;" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" border="0" alt="">
+    </form>
+    <img src="PICS/GlassSupport.png" alt="Support Donate" style="width:25%;">
+ </div>
+
+<div class="section-divider max-w-5xl mx-auto"></div>
+
+<!-- Footer -->
+<footer class="border-t border-[#30363d]/50 py-12 px-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                <span class="iconify text-white text-xs" data-icon="lucide:github"></span>
+            </div>
+            <span class="text-xs text-zinc-600">© 2026 chris1111 — Built with ❤️</span>
+        </div>
+        <div class="flex items-center gap-6">
+            <a href="https://github.com/chris1111" target="_blank" rel="noopener" class="text-zinc-500 hover:text-orange-400 transition-colors">
+                <span class="iconify text-lg" data-icon="lucide:github"></span>
+            </a>
+            <a href="mailto:leblond1111@gmail.com" class="text-zinc-500 hover:text-orange-400 transition-colors">
+                <span class="iconify text-lg" data-icon="lucide:mail"></span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <span class="iconify" data-icon="lucide:arrow-up"></span>
+</button>
+
+<!-- Tooltip -->
+<div id="tooltip" class="tooltip"></div>
+
+<script>
+const yearData = {
+    2026: { total: 1489, density: 0.85 },
+    2025: { total: 487, density: 0.7 },
+    2024: { total: 1043, density: 0.85 },
+    2023: { total: 892, density: 0.75 },
+    2022: { total: 762, density: 0.65 },
+    2021: { total: 663, density: 0.55 }
+};
+
+let currentYear = 2026;
+
+function getContributionLevel(year, weekIndex, dayIndex) {
+    const data = yearData[year];
+    if (!data) return 0;
+
+    // 2026 — all future cells
+    if (data.future) return -1;
+
+    if (year === 2026) {
+        const currentDate = new Date();
+        const startOfYear = new Date(year, 0, 1);
+        const dayOfYear = Math.floor((currentDate - startOfYear) / (1000 * 60 * 60 * 24));
+        const cellDay = weekIndex * 7 + dayIndex;
+        if (cellDay > dayOfYear) return 0;
+    }
+
+    const rand = Math.random();
+    const d = data.density;
+    let multiplier = 1;
+    if (dayIndex === 5 || dayIndex === 6) multiplier *= 0.6;
+    if (weekIndex >= 22 && weekIndex <= 30) multiplier *= 0.7;
+    if (weekIndex <= 3) multiplier *= 1.3;
+    if (weekIndex >= 48) multiplier *= 1.2;
+    const adjustedRand = rand * multiplier;
+    if (adjustedRand > (1 - d * 0.25)) return 4;
+    if (adjustedRand > (1 - d * 0.45)) return 3;
+    if (adjustedRand > (1 - d * 0.65)) return 2;
+    if (adjustedRand > (1 - d * 0.8)) return 1;
+    return 0;
+}
+
+function renderContribGrid(year) {
+    const grid = document.getElementById('contrib-grid');
+    grid.innerHTML = '';
+    let totalContribs = 0;
+    const isFuture = yearData[year] && yearData[year].future;
+    const futureBanner = document.getElementById('future-banner');
+    futureBanner.style.display = isFuture ? 'flex' : 'none';
+
+    // Update total label color for future
+    const yearTotalEl = document.getElementById('year-total');
+
+    for (let w = 0; w < 52; w++) {
+        const weekCol = document.createElement('div');
+        weekCol.className = 'flex flex-col gap-[3px]';
+        for (let d = 0; d < 7; d++) {
+            const level = getContributionLevel(year, w, d);
+            const cell = document.createElement('div');
+
+            if (level === -1) {
+                // Future cell
+                cell.className = 'contrib-cell level-future';
+                cell.style.animation = `cellPop 0.3s ease-out ${(w * 7 + d) * 0.5}ms forwards`;
+                cell.style.opacity = '0';
+                const date = new Date(year, 0, 1 + w * 7 + d);
+                const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                cell.setAttribute('data-tooltip', `🔮 ${dateStr} — the future is not fully ritten`);
+            } else {
+                const count = getContribCount(level);
+                totalContribs += count;
+                cell.className = `contrib-cell level-${level}`;
+                cell.style.animation = `cellPop 0.3s ease-out ${(w * 7 + d) * 0.5}ms forwards`;
+                cell.style.opacity = '0';
+                const date = new Date(year, 0, 1 + w * 7 + d);
+                const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                cell.setAttribute('data-tooltip', level > 0 ? `${count} contributions on ${dateStr}` : `No contributions on ${dateStr}`);
+            }
+
+            cell.addEventListener('mouseenter', showTooltip);
+            cell.addEventListener('mouseleave', hideTooltip);
+            weekCol.appendChild(cell);
+        }
+        grid.appendChild(weekCol);
+    }
+ document.getElementById('year-label').textContent = year;
+
+    if (isFuture) {
+        yearTotalEl.className = 'future-gradient font-bold text-lg';
+        yearTotalEl.textContent = '???';
+    } else {
+        yearTotalEl.className = 'text-orange-400 font-bold text-lg';
+        animateNumber(yearTotalEl, totalContribs, 1500);
+    }
+}
+
+function getContribCount(level) {
+    const counts = [0, Math.floor(Math.random() * 3) + 1, Math.floor(Math.random() * 5) + 3, Math.floor(Math.random() * 6) + 6, Math.floor(Math.random() * 10) + 10];
+    return counts[level];
+}
+
+function showTooltip(e) {
+    const tooltip = document.getElementById('tooltip');
+    tooltip.textContent = e.target.getAttribute('data-tooltip');
+    tooltip.style.opacity = '1';
+    const rect = e.target.getBoundingClientRect();
+    tooltip.style.left = (rect.left + rect.width / 2 - tooltip.offsetWidth / 2) + 'px';
+    tooltip.style.top = (rect.top - 36) + 'px';
+}
+
+function hideTooltip() {
+    document.getElementById('tooltip').style.opacity = '0';
+}
+
+function switchYear(year) {
+    currentYear = year;
+    document.querySelectorAll('.year-tab').forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.getAttribute('data-year') == year) tab.classList.add('active');
+    });
+    renderContribGrid(year);
+}
+
+function updateTabStyles() {
+    document.querySelectorAll('.year-tab').forEach(tab => {
+        if (tab.classList.contains('future-tab')) return; // handled by CSS
+        if (tab.classList.contains('active')) {
+            tab.style.background = 'rgba(249,115,22,0.15)';
+            tab.style.color = '#f97316';
+            tab.style.border = '1px solid rgba(249,115,22,0.3)';
+        } else {
+            tab.style.background = 'rgba(48,54,61,0.5)';
+            tab.style.color = '#8b949e';
+            tab.style.border = '1px solid transparent';
+        }
+    });
+}
+
+const tabObserver = new MutationObserver(updateTabStyles);
+document.querySelectorAll('.year-tab').forEach(tab => {
+    tabObserver.observe(tab, { attributes: true, attributeFilter: ['class'] });
+});
+
+function animateNumber(el, target, duration = 1500) {
+    const start = parseInt(el.textContent) || 0;
+    if (isNaN(start) || el.textContent === '???') {
+        el.textContent = '0';
+    }
+    const s = parseInt(el.textContent) || 0;
+    const startTime = performance.now();
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(s + (target - s) * eased);
+        el.textContent = current.toLocaleString();
+        if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+}
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            const counters = entry.target.querySelectorAll('[data-count]');
+            counters.forEach(counter => {
+                if (!counter.dataset.animated) {
+                    counter.dataset.animated = 'true';
+                    animateNumber(counter, parseInt(counter.getAttribute('data-count')), 2000);
+                }
+            });
+            const langSegments = entry.target.querySelectorAll('.lang-segment');
+            langSegments.forEach(seg => {
+                const targetWidth = seg.getAttribute('data-width');
+                if (targetWidth) setTimeout(() => { seg.style.width = targetWidth; }, 300);
+            });
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        nav.style.borderBottomColor = 'rgba(240,246,252,0.1)';
+    } else {
+        nav.style.borderBottomColor = 'rgba(240,246,252,0.06)';
+    }
+});
+
+// === Back to Top Button ===
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateTabStyles();
+    renderContribGrid(2025);
+    setTimeout(() => { animateNumber(document.getElementById('follower-count'), 89, 1500); }, 600);
+});
+</script>
+
+</body>
+</html>
