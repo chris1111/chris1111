@@ -110,5 +110,5 @@ If you find my projects useful, feel free to support my work — thank you! 🙏
 </div>
 
 <p align="center">
-  <sub>© 2026 chris1111 — Built with ❤️ 🍎</sub>
+  <sub>© 2026 chris1111 — Built with ❤️</sub>
 </p>
