@@ -1,25 +1,65 @@
-### Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎 
-### Hope to meet you 🤝 on one of my project. 
+<div align="center">
+  <a href="https://github.com/chris1111">
+    <img src="https://img.shields.io/badge/Coder-FF8C00?style=for-the-badge&logo=github&logoColor=white" alt="Coder"/>
+  </a>
+  <img src="https://img.shields.io/github/followers/chris1111?label=Followers&style=for-the-badge&color=FF8C00" alt="Followers"/>
+  <img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=github&color=%23FF8C00&message=&style=for-the-badge&tz=US%2FEastern" alt="Visitors"/>
+</div>
 
-<img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=github&color=%23198754&message=&style=for-the-badge&tz=US%2FEastern">
 <p align="center">
-
-## Visit my Page ➡︎ [Github Profile](https://chris1111.github.io/chris1111/)
-
-
-![Pranesh's GitHub stats](https://github-readme-stats-fast.vercel.app/api?username=chris1111&show_icons=true&theme=radical)
-
+  <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=20&duration=3000&pause=1000&color=F97316&center=true&vCenter=true&width=650&height=60&lines=Building+things+that+matter%2C+one+commit+at+a+time.;Life+is+short%2C+you+have+to+make+the+most+of+it.;Hope+to+meet+you+%F0%9F%A4%9D+on+one+of+my+projects" alt="Typing SVG"/>
 </p>
 
-<a href="https://chris1111.github.io/My-Github-Pages/">
-    
-<img src="https://github.com/chris1111/chris1111/blob/master/PICS/GITHUB-2026.png" width="1000px">
+#### Visit my Page ➡︎ [Github Profile](https://chris1111.github.io/chris1111/)
+
+---
+
+<h3 align="center">Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎</h3>
+
+<p align="center">
+  <img src="PICS/GITHUB-2026.png" width="800" alt="GitHub Banner"/>
 </p>
 
-----------------------------------------------------------------------
-### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PICS/PayPal-Donate-Button.svg)](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html)
+---
 
-----------------------------------------------------------------------
+## 📈 Contribution Activity
+
+<div align="center">
+  <img src="https://ghchart.rshah.org/FF8C00/chris1111" alt="chris1111's contribution graph" width="800"/>
+  <p><sub>🔥 Every square is a day of code — the more orange, the more commits!</sub></p>
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=chris1111&locale=en&theme=dark&hide_border=true&background=0D1117&ring=F97316&fire=FF8C00&currStreakLabel=F97316" alt="GitHub Streak" width="500"/>
+</div>
+
+---
+
+### 🛠 Tech Stack
+<p align="center">
+  <a href="https://github.com/chris1111">
+    <img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=chris1111&show_icons=true&theme=radical" alt="chris1111's GitHub stats"/>
+  </a>
+  <a href="https://github.com/chris1111">
+    <img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=chris1111&layout=compact&theme=radical" alt="chris1111's Top Languages"/>
+  </a>
+</p>
+
+### 🏆 Achievements
+
+<div align="center">
+
+🌟 Arctic Code Vault &nbsp;·&nbsp; 🔥 Streak Master &nbsp;·&nbsp; ⚡ Pull Shark &nbsp;·&nbsp; 🎯 Galaxy Brain &nbsp;·&nbsp; 💎 YOLO &nbsp;·&nbsp; 🚀 Star Striker
+
+**🔥 Longest Streak: 127 days**
+
+</div>
+
+---
+
+## 🚀 Pinned Repositories
+
+<div align="center">
 
 macOS Utilities
 
@@ -51,5 +91,34 @@ macOS Utilities
 -|-|-|-
 <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/SF-Symbols-Composer-PNG.png" width="220px"></a>|<a href="https://github.com/chris1111/CreateApp-Platypus"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/CreateApp-Platypus.png" width="220px"></a>|<a href="https://github.com/chris1111/Compress-PNG"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Compress-PNG.png" width="220px"></a>|<a href="https://github.com/chris1111/Download_Install_macOS"><img src="https://github.com/chris1111/chris1111/blob/master/PICS/Download.png" width="220px"></a>
 
-## Visit my pages ➡︎ [Github Pages](https://chris1111.github.io/My-Github-Pages/)
-- [All ➤ Github Project](https://github.com/chris1111?tab=repositories)
+</div>
+
+---
+
+## ☕ Support
+
+<div align="center">
+
+If you find my projects useful, feel free to support my work — thank you! 🙏
+
+### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PICS/PayPal-Donate-Button.svg)](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html)
+
+<br><br>
+<img src="PICS/GlassSupport.png" alt="Support Donate" width="25%"/>
+
+</div>
+
+---
+
+<div align="center">
+  <a href="https://github.com/chris1111" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="mailto:leblond1111@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+</div>
+
+<p align="center">
+  <sub>© 2026 chris1111 — Built with ❤️ 🍎</sub>
+</p>
