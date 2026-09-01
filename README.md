@@ -90,16 +90,6 @@ macOS Utilities
 
 ---
 
-
-## 📈 Contribution Activity
-
-<div align="center">
-  <img src="https://ghchart.rshah.org/chris1111" alt="chris1111's contribution graph" width="800"/>
-  <p><sub>🔥 Every square is a day of code!</sub></p>
-</div>
-
----
-
 ## ☕ Support
 
 <div align="center">
