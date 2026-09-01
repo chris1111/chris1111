@@ -22,13 +22,6 @@
 
 ---
 
-## 📈 Contribution Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chris1111&bg_color=0d1117&color=e6edf3&line=f97316&point=39d353&area=true&area_color=0e4429&hide_border=true" alt="chris1111's contribution graph" width="800"/>
-  <p><sub>🔥 Orange line, green glow — every point is a day of code!</sub></p>
-</div>
-
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=chris1111&locale=en&theme=dark&hide_border=true&background=0D1117&ring=F97316&fire=FF8C00&currStreakLabel=F97316" alt="GitHub Streak" width="500"/>
 </div>
@@ -96,6 +89,13 @@ macOS Utilities
 
 </div>
 
+## 📈 Contribution Activity
+
+<div align="center">
+  <img src="https://ghchart.rshah.org/chris1111" alt="chris1111's contribution graph" width="800"/>
+  <p><sub>🔥 Every square is a day of code!</sub></p>
+</div>
+
 ---
 
 ## ☕ Support
@@ -104,10 +104,11 @@ macOS Utilities
 
 If you find my projects useful, feel free to support my work — thank you! 🙏
 
-### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PICS/PayPal-Donate-Button.svg)](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html)
-
 <br><br>
-<img src="PICS/GlassSupport.png" alt="Support Donate" width="25%"/>
+
+<img src="PICS/GlassSupport.png" alt="Support Donate" width="50%"/>
+
+### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PICS/PayPal-Donate-Button.svg)](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html)
 
 </div>
 
