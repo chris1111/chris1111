@@ -90,19 +90,13 @@ macOS Utilities
 ## ☕ Support
 
 <div align="center">
-
 If you find my projects useful, feel free to support my work — thank you! 🙏
-
 <br><br>
-
-<img src="PICS/GlassSupport.png" alt="Support Donate" width="50%"/>
-
-### 📌  Make a donation and support the projects ➤ [![Support Donate](https://github.com/chris1111/chris1111/blob/master/PICS/PayPal-Donate-Button.svg)](https://htmlpreview.github.io/?https://github.com/chris1111/chris1111/blob/master/SupportDonate.html)
-
+<img src="PICS/GlassSupport.png" alt="Support Donate" width="45%"/>
+<br>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=leblond1111@gmail.com&lc=EN&item_name=chris1111%20Github&no_note=0&currency_code=EUR">
+<img src="PICS/PayPal-Donate-Button.png" alt="PayPal Donate">
 </div>
-
----
-
 <div align="center">
   <a href="mailto:leblond1111@gmail.com">
     <img src="https://img.shields.io/badge/Email-E64A19?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
