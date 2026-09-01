@@ -50,12 +50,6 @@
 </div>
 
 ---
-**🔥 Longest Streak: 127 days**
-
-</div>
-
----
-
 
 ## 🚀 Pinned Repositories
 
