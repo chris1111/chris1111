@@ -25,8 +25,8 @@
 ## 📈 Contribution Activity
 
 <div align="center">
-  <img src="https://ghchart.rshah.org/FF8C00/chris1111" alt="chris1111's contribution graph" width="800"/>
-  <p><sub>🔥 Every square is a day of code — the more orange, the more commits!</sub></p>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chris1111&bg_color=0d1117&color=e6edf3&line=f97316&point=39d353&area=true&area_color=0e4429&hide_border=true" alt="chris1111's contribution graph" width="800"/>
+  <p><sub>🔥 Orange line, green glow — every point is a day of code!</sub></p>
 </div>
 
 <div align="center">
