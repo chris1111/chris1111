@@ -10,11 +10,11 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=20&duration=3000&pause=1000&color=F97316&center=true&vCenter=true&width=650&height=60&lines=Building+things+that+matter%2C+one+commit+at+a+time.;Life+is+short%2C+you+have+to+make+the+most+of+it.;Hope+to+meet+you+%F0%9F%A4%9D+on+one+of+my+projects" alt="Typing SVG"/>
 </p>
 
-#### Visit my Page ➡︎ [Github Profile](https://chris1111.github.io/chris1111/)
+### Visit my Page ➡︎ [Github Profile](https://chris1111.github.io/chris1111/)
 
 ---
 
-<h3 align="center">Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎</h3>
+<h4 align="center">Hi there 😄 I am passionate about Apple and I have several projects on which I spend time 😎</h4>
 
 <p align="center">
   <img src="PICS/GITHUB-2026.png" width="800" alt="GitHub Banner"/>
