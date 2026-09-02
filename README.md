@@ -99,10 +99,9 @@ If you find my projects useful, feel free to support my work — thank you! 🙏
 </div>
 <div align="center">
   <a href="mailto:leblond1111@gmail.com">
-    <img src="https://img.shields.io/badge/Email-E64A19?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/Email-E64A19?style=plastic&logo=gmail&logoColor=white" alt="Email" height="24"/>
   </a>
 </div>
-
 <p align="center">
   <sub>© 2026 chris1111 — Built with ❤️</sub>
 </p>
