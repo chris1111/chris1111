@@ -95,7 +95,7 @@ macOS Utilities
 <div align="center">
 If you find my projects useful, feel free to support my work — thank you! 🙏
 <br><br>
-<img src="PICS/GlassSupport.png" alt="Support Donate" width="45%"/>
+<img src="PICS/GlassSupport.png" alt="Support Donate" width="60%"/>
 <br>
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=leblond1111@gmail.com&lc=EN&item_name=chris1111%20Github&no_note=0&currency_code=EUR">
 <img src="PICS/PayPal-Donate-Button.png" alt="PayPal Donate">
