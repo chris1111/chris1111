@@ -51,6 +51,15 @@
 
 ---
 
+## 🚀 Utilities — Showcase
+
+<div align="center">
+  <a href="https://github.com/chris1111?tab=repositories">
+    <img src="PICS/slideshow.svg?v=20260923" width="820" alt="Slideshow macOS Utilities"/>
+  </a>
+</div>
+
+
 ## 🚀 Pinned Repositories
 
 <div align="center">
