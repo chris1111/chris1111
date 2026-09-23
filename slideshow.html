@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>chris1111 — macOS Utilities</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#010409;font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;padding:24px}
+.window{width:min(900px,100%);background:#0d1117;border:1px solid #30363d;border-radius:18px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.6)}
+.titlebar{display:flex;align-items:center;height:44px;padding:0 16px;background:#010409;border-bottom:1px solid #21262d;position:relative}
+.dot{width:13px;height:13px;border-radius:50%;margin-right:8px}
+.title{position:absolute;left:50%;transform:translateX(-50%);color:#e6edf3;font-size:14px;font-weight:600;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.stage{position:relative;height:480px}
+.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .7s ease;cursor:pointer}
+.slide.active{opacity:1}
+.slide img{max-width:92%;max-height:92%;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.55)}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:1px solid #30363d;background:rgba(22,27,34,.85);color:#e6edf3;font-size:18px;cursor:pointer;z-index:5;transition:.2s}
+.arrow:hover{border-color:#FF8C00;color:#FF8C00}
+.prev{left:14px}.next{right:14px}
+.caption{display:flex;align-items:baseline;justify-content:center;gap:12px;padding:14px 0 4px}
+.caption a{color:#e6edf3;text-decoration:none;font-size:17px;font-weight:600}
+.caption a:hover{color:#FF8C00}
+.count{color:#8b949e;font-size:14px}
+.bar{height:3px;background:#21262d;margin:10px 24px 6px;border-radius:99px;overflow:hidden}
+.bar div{height:100%;width:0;background:linear-gradient(90deg,#FF8C00,#F97316)}
+.dots{display:flex;justify-content:center;gap:8px;padding:8px 0 14px;flex-wrap:wrap}
+.dotbtn{width:9px;height:9px;border-radius:50%;border:none;background:#30363d;cursor:pointer;transition:.2s;padding:0}
+.dotbtn.on{background:#FF8C00;transform:scale(1.25)}
+.ctrl{display:flex;justify-content:center;padding-bottom:16px}
+.playbtn{border:1px solid #30363d;background:#161b22;color:#e6edf3;border-radius:8px;padding:7px 18px;cursor:pointer;font-size:13px;font-weight:600;transition:.2s}
+.playbtn:hover{border-color:#FF8C00;color:#FF8C00}
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar">
+    <span class="dot" style="background:#ff5f57"></span>
+    <span class="dot" style="background:#febc2e"></span>
+    <span class="dot" style="background:#28c840"></span>
+    <span class="title">chris1111 — macOS Utilities</span>
+  </div>
+  <div class="stage" id="stage">
+    <button class="arrow prev" id="prev" aria-label="Précédent">❮</button>
+    <button class="arrow next" id="next" aria-label="Suivant">❯</button>
+  </div>
+  <div class="caption"><a id="caplink" target="_blank" rel="noopener"></a><span class="count" id="count"></span></div>
+  <div class="bar"><div id="barfill"></div></div>
+  <div class="dots" id="dots"></div>
+  <div class="ctrl"><button class="playbtn" id="play">⏸ Pause</button></div>
+</div>
+<script>
+const DURATION = 5000; // ms par slide
+const SLIDES = [
+ {img:"PICS/Background-Resizer.png",name:"Background-Resizer",url:"https://github.com/chris1111/Background-Resizer"},
+ {img:"PICS/Workshop.png",name:"Workshop-Layered-Image-Studio",url:"https://github.com/chris1111/Workshop-Layered-Image-Studio"},
+ {img:"PICS/Studio.png",name:"Icon-Studio",url:"https://github.com/chris1111/Icon-Studio"},
+ {img:"PICS/OCUSBMEDIA.png",name:"OC-USB-MEDIA",url:"https://github.com/chris1111/OC-USB-MEDIA"},
+ {img:"PICS/Chameleon.png",name:"Chameleon",url:"https://github.com/chris1111/Chameleon"},
+ {img:"PICS/OpenCoreCreator.png",name:"OpenCore-Creator",url:"https://github.com/chris1111/OpenCore-Creator"},
+ {img:"PICS/InstallMediaOC.png",name:"Install-Media-OC",url:"https://github.com/chris1111/Install-Media-OC"},
+ {img:"PICS/Clover-Duet.png",name:"Clover-Duet",url:"https://github.com/chris1111/Clover-Duet"},
+ {img:"PICS/HP-EliteBook-840-G4.png",name:"HP EliteBook 840 G4",url:"https://github.com/chris1111/HP-EliteBook-840-G4"},
+ {img:"PICS/MacEFI-Mounter.png",name:"MacEFIMounter",url:"https://github.com/chris1111/MacEFIMounter"},
+ {img:"PICS/Optiplex-790.png",name:"Dell-Optiplex-790",url:"https://github.com/chris1111/Dell-Optiplex-790"},
+ {img:"PICS/Snow-DVD-Creator.png",name:"Snow-Leopard-DVD-Creator",url:"https://github.com/chris1111/Snow-Leopard-DVD-Creator"},
+ {img:"PICS/Wireless-USB-Big-Sur-Adapter.png",name:"Wireless USB BigSur Adapter",url:"https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter"},
+ {img:"PICS/OpenCanopy-Generator.png",name:"OpenCanopy Generator",url:"https://github.com/chris1111/OpenCanopy-Generator"},
+ {img:"PICS/Themes-OpenCore.png",name:"Themes OpenCore",url:"https://github.com/chris1111/My-Simple-OC-Themes"},
+ {img:"PICS/Lion-DVD-Creator.png",name:"Lion-DVD-Creator",url:"https://github.com/chris1111/Lion-DVD-Creator"},
+ {img:"PICS/Wifi-Mediatek-macOS.png",name:"WIFI Mediatek macOS",url:"https://github.com/chris1111/D-LinkUtility-Package"},
+ {img:"PICS/HP-Probook-EliteBook-Package-Creator-OC.png",name:"HP Probook EliteBook macOS OC",url:"https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC"},
+ {img:"PICS/IconSet-Tahoe-Style-Linux-Mac.png",name:"IconSet Tahoe Style",url:"https://github.com/chris1111/IconSet-Tahoe-Style-Linux-Mac"},
+ {img:"PICS/Create-Windows-USB.png",name:"Create-Windows-USB",url:"https://github.com/chris1111/Create-Windows-USB"},
+ {img:"PICS/Garuda.png",name:"Linux Tahoe Style Disk",url:"https://github.com/chris1111/Linux-Tahoe-Style-Disk"},
+ {img:"PICS/Disable-Gatekeeper.png",name:"Gatekeeper Tools",url:"https://github.com/chris1111/Gatekeeper-Tools"},
+ {img:"PICS/Wimlib-imagex-Packager.png",name:"Wimlib imagex Packager",url:"https://github.com/chris1111/Wimlib-Imagex-Package"},
+ {img:"PICS/Software-Update.png",name:"Softwareupdate Full Installer",url:"https://github.com/chris1111/Softwareupdate-full-installer"},
+ {img:"PICS/SF-Symbols-Composer-PNG.png",name:"SF Symbols Composer PNG",url:"https://github.com/chris1111/SF-Symbols-Composer-PNG"},
+ {img:"PICS/CreateApp-Platypus.png",name:"CreateApp-Platypus",url:"https://github.com/chris1111/CreateApp-Platypus"},
+ {img:"PICS/Compress-PNG.png",name:"Compress-PNG",url:"https://github.com/chris1111/Compress-PNG"},
+ {img:"PICS/Download.png",name:"Download-macOS",url:"https://github.com/chris1111/Download_Install_macOS"},
+];
+const stage=document.getElementById('stage');
+SLIDES.forEach(s=>{const d=document.createElement('div');d.className='slide';
+ d.innerHTML=`<img src="${s.img}" alt="${s.name}" loading="eager">`;
+ d.addEventListener('click',()=>window.open(s.url,'_blank'));stage.appendChild(d);});
+const slides=[...document.querySelectorAll('.slide')];
+const dotsBox=document.getElementById('dots');
+SLIDES.forEach((s,i)=>{const b=document.createElement('button');b.className='dotbtn';
+ b.setAttribute('aria-label',s.name);b.onclick=()=>go(i);dotsBox.appendChild(b);});
+const dots=[...dotsBox.children];
+const barfill=document.getElementById('barfill');
+let cur=0,playing=true,elapsed=0,last=performance.now();
+function go(i){
+ slides[cur].classList.remove('active');dots[cur].classList.remove('on');
+ cur=(i+SLIDES.length)%SLIDES.length;
+ slides[cur].classList.add('active');dots[cur].classList.add('on');
+ const s=SLIDES[cur],cap=document.getElementById('caplink');
+ cap.textContent=s.name;cap.href=s.url;
+ document.getElementById('count').textContent=
+   String(cur+1).padStart(2,'0')+' / '+String(SLIDES.length).padStart(2,'0');
+ elapsed=0;barfill.style.width='0%';
+}
+document.getElementById('prev').onclick=()=>go(cur-1);
+document.getElementById('next').onclick=()=>go(cur+1);
+const playBtn=document.getElementById('play');
+playBtn.onclick=()=>{playing=!playing;playBtn.textContent=playing?'⏸ Pause':'▶ Lecture';};
+document.addEventListener('keydown',e=>{
+ if(e.key==='ArrowRight')go(cur+1);
+ if(e.key==='ArrowLeft')go(cur-1);
+ if(e.key===' '){e.preventDefault();playBtn.click();}});
+function tick(now){
+ if(playing){elapsed+=now-last;
+  if(elapsed>=DURATION)go(cur+1);
+  else barfill.style.width=(elapsed/DURATION*100)+'%';}
+ last=now;requestAnimationFrame(tick);}
+go(0);requestAnimationFrame(tick);
+</script>
+</body>
+</html>
