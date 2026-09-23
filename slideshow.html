@@ -12,7 +12,8 @@ body{min-height:100vh;display:flex;align-items:center;justify-content:center;bac
 .dot{width:13px;height:13px;border-radius:50%;margin-right:8px}
 .title{position:absolute;left:50%;transform:translateX(-50%);color:#e6edf3;font-size:14px;font-weight:600;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 .stage{position:relative;height:480px}
-.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .7s ease;cursor:pointer}
+.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .7s ease;cursor:pointer;pointer-events:none}
+.slide.active{opacity:1;pointer-events:auto}
 .slide.active{opacity:1}
 .slide img{max-width:92%;max-height:92%;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.55)}
 .arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:1px solid #30363d;background:rgba(22,27,34,.85);color:#e6edf3;font-size:18px;cursor:pointer;z-index:5;transition:.2s}
